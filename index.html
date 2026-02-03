@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jongpyo Hong | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                    colors: {
+                        'corporate-black': '#111111',
+                        'corporate-gray': '#f8f9fa',
+                        'text-muted': '#525252',
+                        'accent': '#2563eb' 
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { -webkit-font-smoothing: antialiased; }
+        html { scroll-behavior: smooth; }
+        .fade-in { animation: fadeIn 1s ease-out forwards; opacity: 0; transform: translateY(15px); }
+        .delay-100 { animation-delay: 0.1s; }
+        .delay-200 { animation-delay: 0.2s; }
+        .delay-300 { animation-delay: 0.3s; }
+        @keyframes fadeIn { to { opacity: 1; transform: translateY(0); } }
+        
+        /* Accordion Styling */
+        details > summary { list-style: none; }
+        details > summary::-webkit-details-marker { display: none; }
+        details[open] summary ~ * { animation: slideDown 0.4s ease-out; }
+        @keyframes slideDown {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Editorial Typography */
+        .prose-quote {
+            border-left: 2px solid #e5e7eb;
+            padding-left: 1.5rem;
+            font-style: italic;
+            color: #4b5563;
+            margin: 2rem 0;
+        }
+    </style>
+</head>
+<body class="bg-corporate-gray text-corporate-black font-sans leading-relaxed selection:bg-gray-200">
+
+    <nav class="fixed top-0 w-full bg-corporate-gray/95 backdrop-blur-sm z-50 py-6 border-b border-gray-200/50">
+        <div class="max-w-4xl mx-auto px-6 flex justify-between items-center">
+            <div class="font-serif font-bold text-xl tracking-tight">J. Hong</div>
+            <div class="hidden md:flex space-x-8 text-sm font-medium text-text-muted">
+                <a href="#military" class="hover:text-black transition-colors">Service</a>
+                <a href="#research" class="hover:text-black transition-colors">Research</a>
+                <a href="#philosophy" class="hover:text-black transition-colors">Philosophy</a>
+                <a href="#creative" class="hover:text-black transition-colors">Creative</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-3xl mx-auto px-6 pt-40 pb-20">
+
+        <section class="mb-24 fade-in">
+            <p class="text-xs font-bold text-text-muted uppercase tracking-widest mb-6">© Jongpyo Hong 2025</p>
+            <h1 class="font-serif text-5xl md:text-6xl text-corporate-black mb-8 leading-tight">
+                Interdisciplinary synthesis of <br>
+                <span class="text-text-muted italic">engineering, law, and finance.</span>
+            </h1>
+            <p class="text-lg text-text-muted max-w-xl leading-relaxed">
+                Exploring the convergence of systemic risk, constitutional logic, and memory thermodynamics. 
+                Currently serving in the 15th CBRN, V Corps.
+            </p>
+        </section>
+
+        <hr class="border-gray-300 mb-20 opacity-60">
+
+        <section id="military" class="mb-28 fade-in delay-100">
+            <h2 class="font-serif text-3xl mb-10">Military Service</h2>
+            <div class="group border-l-2 border-gray-200 pl-6 hover:border-black transition-colors duration-300">
+                <div class="flex flex-col md:flex-row md:justify-between md:items-baseline mb-2">
+                    <h3 class="text-xl font-semibold">Battalion Commander’s Vehicle Operator</h3>
+                    <span class="text-sm text-text-muted font-mono">15th CBRN, V Corps</span>
+                </div>
+                
+                <p class="text-text-muted mb-6">
+                    <strong>The Ethics of Proximity:</strong> Maintaining strict confidentiality and discipline while operating in high-stakes environments. 
+                </p>
+
+                <details class="bg-gray-50 rounded border border-gray-200 overflow-hidden mb-6">
+                    <summary class="flex justify-between items-center cursor-pointer px-4 py-3 bg-gray-100 hover:bg-gray-200 transition-colors">
+                        <span class="text-xs font-bold uppercase tracking-widest text-corporate-black">Technical Protocol: Driving Formula (Heavy-Duty Truck)</span>
+                        <span class="transform group-open:rotate-180 transition-transform duration-300 text-gray-500 text-xs">
+                            Expand +
+                        </span>
+                    </summary>
+                    
+                    <div class="p-6 text-sm text-text-muted leading-relaxed">
+                        <p class="mb-4 italic">
+                            <strong>Context:</strong> As a Transportation Specialist, operating heavy-duty tactical vehicles required more than intuition; it required an algorithm. Due to limited visibility and manual transmission, relying on “feel” was a safety risk. This standardized protocol navigated L, S, and T licensure courses with zero error margins.
+                        </p>
+
+                        <div class="bg-white p-4 border border-gray-200 mb-6 font-mono text-xs rounded">
+                            <p class="font-bold mb-2 text-black">Transmission Gear Layout (Manual)</p>
+                            <pre>
+[R]  [2]  [5]
+ |    |    |
+ |    |    |
+[1]  [3]  [4]
+                            </pre>
+                            <p class="mt-2 text-gray-500">
+                                *Spring tension exists between R and 2. To avoid accidental 5th gear entry, find the resistance point and push forward for 2nd gear.
+                            </p>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                            <div>
+                                <h4 class="font-bold text-black mb-2 uppercase text-xs">L (Crooked Course)</h4>
+                                <ol class="list-decimal list-inside space-y-1 text-xs">
+                                    <li>Position truck close to right lane.</li>
+                                    <li>Stop when left mirror is parallel to 1st cornerstone.</li>
+                                    <li>Full Left: Proceed until mid-line aligns with body.</li>
+                                    <li>Full Right: Reverse (check right mirror for rear wheel).</li>
+                                    <li>Approach next corner close to left lane.</li>
+                                    <li>Stop when right mirror parallel to cornerstone.</li>
+                                    <li>Full Right: Proceed until 1/3 of left fender aligns with lane.</li>
+                                    <li>Full Left: Reverse slightly to create room.</li>
+                                    <li>Full Right: Exit.</li>
+                                </ol>
+                            </div>
+
+                            <div>
+                                <h4 class="font-bold text-black mb-2 uppercase text-xs">S (Curved Course)</h4>
+                                <ol class="list-decimal list-inside space-y-1 text-xs">
+                                    <li>Locate truck close to right lane.</li>
+                                    <li>Straight until left blinker is 30cm from lane.</li>
+                                    <li>Full Left: Proceed until left blinker aligns with lane.</li>
+                                    <li>Full Right: Reverse until right rear wheel touches lane.</li>
+                                    <li>Straight, then rotate left accordingly.</li>
+                                    <li>Rotate Right when 1/3 fender approaches left lane.</li>
+                                    <li>Stop when 1/3 fender aligns with left lane.</li>
+                                    <li>Full Left: Reverse until left rear wheel touches lane.</li>
+                                    <li>Proceed/Rotate Right to exit.</li>
+                                </ol>
+                            </div>
+
+                            <div>
+                                <h4 class="font-bold text-black mb-2 uppercase text-xs">T (Direction Change)</h4>
+                                <ol class="list-decimal list-inside space-y-1 text-xs">
+                                    <li>Locate truck close to left lane.</li>
+                                    <li>Straight until shoulders align with 2nd stone.</li>
+                                    <li>Full Right: Proceed until shoulders align with 3rd stone.</li>
+                                    <li>Full Left: Reverse until parallel to side pit.</li>
+                                    <li>Reverse until rear wheels pass verification line.</li>
+                                    <li>Full Left: Proceed until left fender aligns with yellow/black border.</li>
+                                    <li>Full Right: Proceed until 1/3 left fender aligns with lane.</li>
+                                    <li>Full Left: Reverse until rear wheel touches left lane.</li>
+                                    <li>Exit course.</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </details>
+            </div>
+        </section>
+
+        <section id="research" class="mb-28 fade-in delay-200">
+            <h2 class="font-serif text-3xl mb-12">Research & Analysis</h2>
+
+            <div class="mb-16">
+                <h3 class="text-xs font-bold text-accent uppercase tracking-widest mb-6">Engineering & Physics</h3>
+                <div class="bg-white p-8 border border-gray-200 shadow-sm">
+                    <span class="text-xs font-mono text-text-muted mb-2 block">Senior Thesis</span>
+                    <h4 class="font-serif text-xl md:text-2xl mb-4 leading-snug">
+                        Impact of applied external resistor and variance in pulse rise and fall time on polarity-induced threshold voltage shift in Te-based Ovonic Threshold Switching chalcogenides for Selector-Only Memory (SOM) applications
+                    </h4>
+                    <div class="text-sm text-text-muted border-t pt-4 mt-4 border-gray-100">
+                        <p class="mb-2"><strong>Additional Works:</strong></p>
+                        <ul class="list-disc list-inside space-y-1">
+                            <li>Kinematics of a Bus: Mathematical modeling of transport.</li>
+                            <li>Derivations in Quantum Mechanics & Linear Algebra.</li>
+                            <li>Quantum Einstein, Bohr, and the Great Debate About the Nature of Reality.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-16">
+                <h3 class="text-xs font-bold text-accent uppercase tracking-widest mb-6">Law & Policy</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <h4 class="font-semibold text-lg mb-2">Constitutional Logic</h4>
+                        <p class="text-text-muted text-sm leading-relaxed">
+                            "Resolving Gödel’s Constitutional Loophole: A Proposal to Safeguard the Amendment Process."
+                        </p>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold text-lg mb-2">Medical Law</h4>
+                        <p class="text-text-muted text-sm leading-relaxed">
+                            "Putative Causal Link Between Tylenol Use in Pregnancy and Autism."
+                        </p>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold text-lg mb-2">Privacy & Security</h4>
+                        <p class="text-text-muted text-sm leading-relaxed">
+                            "Session: A Privacy and Security Haven."
+                        </p>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold text-lg mb-2">Urban Policy</h4>
+                        <p class="text-text-muted text-sm leading-relaxed">
+                            "Urban Mobility Crisis: Mitigating Seoul’s Infrastructure Saturation via Policy & Tech."
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <h3 class="text-xs font-bold text-accent uppercase tracking-widest mb-6">Finance & Economics</h3>
+                <ul class="space-y-6">
+                    <li class="flex flex-col">
+                        <span class="font-semibold text-lg">Systemic Risk Analysis</span>
+                        <span class="text-text-muted text-sm">Comparative Study of US Subprime Crisis & Korean Housing Debt.</span>
+                    </li>
+                    <li class="flex flex-col">
+                        <span class="font-semibold text-lg">Digital Asset Class Analysis</span>
+                        <span class="text-text-muted text-sm">Bitcoin, XRP, and Comparative Market Dynamics.</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <hr class="border-gray-300 mb-20 opacity-60">
+
+        <section id="philosophy" class="mb-28 fade-in delay-300">
+            <h2 class="font-serif text-3xl mb-6">Philosophy</h2>
+            
+            <details class="group bg-white border border-gray-200 overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300 mb-4">
+                <summary class="flex justify-between items-center cursor-pointer p-8 bg-white">
+                    <div>
+                        <span class="text-xs font-mono text-text-muted uppercase tracking-wider mb-2 block">Essay I</span>
+                        <h3 class="font-serif text-2xl mb-2">Thermodynamics of the Soul</h3>
+                        <p class="text-text-muted text-sm italic">A four-part meditation on entropy, emotion, and the physics of memory.</p>
+                    </div>
+                    <span class="transform group-open:rotate-180 transition-transform duration-300 text-gray-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </span>
+                </summary>
+                <div class="px-8 pb-12 pt-4 max-w-2xl mx-auto leading-loose text-gray-700">
+                    <p class="mb-6 first-letter:text-5xl first-letter:font-serif first-letter:float-left first-letter:mr-3 first-letter:mt-[-10px]">
+                        When I left home for the military, I thought separation would just mean distance—a temporary disconnection from the world I knew. Instead, it became a kind of experiment in physics.
+                    </p>
+                    <p class="mb-12">The more I watched the world shrink into repetition and silence, the more I realized that the same laws that govern matter also govern feeling. Entropy, decay, containment, conservation—all exist within the soul.</p>
+
+                    <h4 class="font-serif text-xl font-bold text-black mb-4">I. The Half-Life of Emotion</h4>
+                    <p class="mb-6">Every emotion decays. Not suddenly, but predictably—like a radioactive element losing its brilliance with time. Love, grief, excitement, shame—they all obey the same quiet law: the more we revisit them, the more they weaken.</p>
+                    <blockquote class="prose-quote">“The heart, like the atom, cannot stay excited forever.”</blockquote>
+                    
+                    <h4 class="font-serif text-xl font-bold text-black mb-4">II. Echoes in Closed Systems</h4>
+                    <p class="mb-6">Military life is a closed system. From the outside, it looks like stability. But inside, the mind reverberates. Memory bounces back louder each time. The result is not silence, but resonance.</p>
+                    <blockquote class="prose-quote">“Confinement doesn’t destroy the self. It concentrates it.”</blockquote>
+
+                    <h4 class="font-serif text-xl font-bold text-black mb-4">III. The Geometry of Longing</h4>
+                    <p class="mb-6">In physics, gravity bends space. Longing does the same thing to time. Desire dilates time; absence compresses it. We live inside the geometry of our own distortions.</p>
+                    
+                    <h4 class="font-serif text-xl font-bold text-black mb-4">IV. The Conservation of Presence</h4>
+                    <p class="mb-6">Physics tells us that energy cannot be created or destroyed. The same must be true of presence. People disappear from our lives, but not from the system. Their absence becomes echo.</p>
+                    
+                    <div class="bg-gray-50 p-6 rounded text-sm text-text-muted border border-gray-100 mt-8">
+                        <p><strong>Author’s Note:</strong> Writing this was calibration. A reminder that decay is not destruction.</p>
+                    </div>
+                </div>
+            </details>
+
+            <details class="group bg-white border border-gray-200 overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300 mb-4">
+                <summary class="flex justify-between items-center cursor-pointer p-8 bg-white">
+                    <div>
+                        <span class="text-xs font-mono text-text-muted uppercase tracking-wider mb-2 block">Essay II</span>
+                        <h3 class="font-serif text-2xl mb-2">Philosophical Parallel</h3>
+                        <p class="text-text-muted text-sm italic">Entropy, The Observer Effect, and the Collapse of Memory.</p>
+                    </div>
+                    <span class="transform group-open:rotate-180 transition-transform duration-300 text-gray-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </span>
+                </summary>
+                
+                <div class="px-8 pb-12 pt-4 max-w-2xl mx-auto leading-loose text-gray-700">
+                    <p class="mb-6 first-letter:text-5xl first-letter:font-serif first-letter:float-left first-letter:mr-3 first-letter:mt-[-10px]">
+                        We can never go back the same way. Entropy is the tendency for systems to move from order to disorder—a directionality we perceive as time. The more interactions, the more randomness, the more the system becomes irreversible.
+                    </p>
+                    <p class="mb-6">
+                        In life, that one high school afternoon, a breeze through an open window, a song playing in the background while laughing with a friend—it was one microstate among trillions. And because every variable has shifted since—the friend, the breeze, my thoughts—it can never happen again in that exact configuration.
+                    </p>
+                    <p class="mb-6">
+                        Just like entropy, nostalgia is asymmetric—it flows in one direction. I can recall the past, but I cannot re-enter it.
+                    </p>
+
+                    <h4 class="font-serif text-xl font-bold text-black mb-4">The Improbability of the Moment</h4>
+                    <p class="mb-6">
+                        That specific combination of conditions—what song was playing, what I felt, what my friend said, the angle of sunlight, my emotional state—was one microstate chosen out of an almost infinite space.
+                    </p>
+                    <blockquote class="prose-quote">
+                        “It wasn’t designed, and yet it became sacred.”
+                    </blockquote>
+                    <p class="mb-6">
+                        This creates a paradox: How could something so unplanned feel so important? That moment becomes meaningful precisely because it cannot happen again.
+                    </p>
+                    <p class="mb-6">
+                        <strong>Why nostalgia hurts:</strong> the emotional ache of nostalgia isn’t just missing the past—it’s the recognition that the configuration is unrecoverable. The brain knows it will never perfectly align again. No adult re-creation with the same people can truly reconstruct the feeling because I am no longer the same observer.
+                    </p>
+
+                    <h4 class="font-serif text-xl font-bold text-black mb-4">The Observer Effect</h4>
+                    <p class="mb-6">
+                        This mirrors the quantum idea that observation changes the state. When I recall a memory, I disturb it. When I try to re-create the past, I fail because the act of seeking already alters my state. So even chasing that feeling bends it further from reach.
+                    </p>
+                    <p class="mb-6">
+                        The moment has already collapsed. Like a wave function in quantum mechanics, the original moment existed as a unique configuration—one precise combination of time, emotion, environment, and self. The instant we try to observe it, replicate it, or remake it, we collapse the possibility space into something narrower—something less real.
+                    </p>
+
+                    <h4 class="font-serif text-xl font-bold text-black mb-4">The Distortion of Replication</h4>
+                    <p class="mb-6">
+                        The attempt itself introduces distortion. Every act of replication becomes performance. We replay the song that once made us feel free—but now we’re watching ourselves for emotional reaction, measuring it, noting its dullness.
+                    </p>
+                    <blockquote class="prose-quote">
+                        “We boot up the game we once loved—but it’s too quiet, too empty, the interface feels dated. It’s not the place that’s different—it’s us.”
+                    </blockquote>
+                    <p class="mb-6">
+                        Every attempt confirms what we’ve lost. The emotional feedback loop of nostalgia has a dark symmetry: the harder we chase the past, the more we realize we cannot catch it. That realization becomes a second kind of loss.
+                    </p>
+
+                    <h4 class="font-serif text-xl font-bold text-black mb-4">Toward Reverence</h4>
+                    <p class="mb-6">
+                        So what do we do? We don’t re-create the past, but we can sense its rarity. That sense teaches appreciation—a kind of emotional thermodynamics. We become someone who notices the entropy of joy, and that noticing itself becomes a new kind of wisdom.
+                    </p>
+                    <p class="mb-6">
+                        In the entropy of experience, replication is impossible—but reverence is not. And from that reverence, a new kind of meaning can emerge: not in imitation, but in living fully now, so that someday, today’s ordinary might ache just as sweetly.
+                    </p>
+                </div>
+            </details>
+
+            <details class="group bg-white border border-gray-200 overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300 mb-4">
+                <summary class="flex justify-between items-center cursor-pointer p-8 bg-white">
+                    <div>
+                        <span class="text-xs font-mono text-text-muted uppercase tracking-wider mb-2 block">Essay III</span>
+                        <h3 class="font-serif text-2xl mb-2">Physics of Separation</h3>
+                        <p class="text-text-muted text-sm italic">Entropy, Order, and the Irreversibility of Home.</p>
+                    </div>
+                    <span class="transform group-open:rotate-180 transition-transform duration-300 text-gray-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </span>
+                </summary>
+                
+                <div class="px-8 pb-12 pt-4 max-w-2xl mx-auto leading-loose text-gray-700">
+                    <p class="mb-6 first-letter:text-5xl first-letter:font-serif first-letter:float-left first-letter:mr-3 first-letter:mt-[-10px]">
+                        When you leave home, you expect to miss the people, the streets, the late-night walks. You don’t expect to miss the air between moments—the invisible medium that once carried your life’s warmth. But distance has a way of revealing what truly mattered. It’s not the buildings or the objects that haunt you. It’s the configurations—those fleeting alignments of time, emotion, and presence that entropy quietly erased.
+                    </p>
+                    
+                    <h4 class="font-serif text-xl font-bold text-black mb-4">Order and Rebellion</h4>
+                    <p class="mb-6">
+                        In the military, order defines everything. The bed corners are exact, routines repeat with mechanical precision, and every gesture belongs to a collective rhythm. The system is designed to minimize randomness—entropy reduced to near zero. Yet inside that structure, the mind becomes the only place where disorder still thrives. Memory, unregulated, leaks through like heat through metal. And the more the body adapts to uniformity, the louder the past begins to hum.
+                    </p>
+                    <p class="mb-6">
+                        Each night, after the drills and commands fade, I find myself remembering not events but textures: the half-light of my room back home, the hum of a refrigerator, the way my friend’s voice used to break into laughter. These summon themselves—they surface, uninvited, as if entropy itself were reminding me that nothing stable lasts.
+                    </p>
+                    <blockquote class="prose-quote">
+                        “The paradox is cruel: the stricter my environment becomes, the freer my memories feel. In a world engineered for sameness, nostalgia becomes rebellion.”
+                    </blockquote>
+
+                    <h4 class="font-serif text-xl font-bold text-black mb-4">Home as a State Function</h4>
+                    <p class="mb-6">
+                        Entropy is supposed to be the measure of disorder in a system. But in human terms, maybe it’s the measure of irreversibility—the impossibility of reassembling what has already scattered. Every time I think of home, I realize I am not recalling a place but a state function—a combination of variables (youth, freedom, expectation) that can no longer coexist. The moment I try to hold it still, I collapse its probability. I am, once again, the observer disturbing the system.
+                    </p>
+                    <p class="mb-6">
+                        That’s the hidden cruelty of nostalgia: it asks you to return as the same observer when the very act of missing has changed you. The soldier who recalls the student cannot be the same person who once sat by the window; the act of service alters the conditions of observation. Even if I returned home today, it would no longer be home—only a set of coordinates that once hosted a life I’ve already outgrown.
+                    </p>
+
+                    <h4 class="font-serif text-xl font-bold text-black mb-4">Distillation</h4>
+                    <p class="mb-6">
+                        And yet, within that irreversibility lies something sacred. Entropy may dissolve the structures we love, but it ensures that each moment is unrepeatable. The ache we feel is not just pain—it’s evidence that something once burned bright enough to leave an afterimage. To live fully, then, is to accept the decay as part of the design. Meaning doesn’t survive entropy; it emerges from it.
+                    </p>
+                    <p class="mb-6">
+                        Perhaps this is what “home” becomes, over time: not a place to return to, but a collection of decayed microstates we carry as warmth. The physics of missing is not about recovery but recognition—the realization that loss is not the end of experience, but its transformation into memory.
+                    </p>
+                    <p class="text-lg font-serif italic text-black mt-8 text-center">
+                        “Entropy doesn’t destroy the past. It distills it. <br>
+                        And if we pay attention, even the fading becomes a form of light.”
+                    </p>
+                </div>
+            </details>
+
+            <details class="group bg-white border border-gray-200 overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300">
+                <summary class="flex justify-between items-center cursor-pointer p-8 bg-white">
+                    <div>
+                        <span class="text-xs font-mono text-text-muted uppercase tracking-wider mb-2 block">Essay IV</span>
+                        <h3 class="font-serif text-2xl mb-2">Discipline</h3>
+                        <p class="text-text-muted text-sm italic">Obedience, Responsibility, and the Architecture of Self.</p>
+                    </div>
+                    <span class="transform group-open:rotate-180 transition-transform duration-300 text-gray-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </span>
+                </summary>
+                
+                <div class="px-8 pb-12 pt-4 max-w-2xl mx-auto leading-loose text-gray-700">
+                    <p class="mb-6 first-letter:text-5xl first-letter:font-serif first-letter:float-left first-letter:mr-3 first-letter:mt-[-10px]">
+                        What is the army for? Not just in theory—defense, deterrence, national security—but in human terms. What function does a military service serve inside the minds of those who inhabit it?
+                    </p>
+                    <p class="mb-6">
+                        At its core, an army exists to impose order on uncertainty. War, danger, and human fear are chaotic; the military converts that chaos into a chain of command, procedures, and predictability. Every uniform, every salute, every routine is an attempt to domesticate disorder.
+                    </p>
+                    <p class="mb-6">
+                        But here’s the paradox: this order only works if individuals surrender part of their judgment. Soldiers are trained to act as extensions of a system—to obey instantly, suppress doubt, and rely on the structure.
+                    </p>
+                    <blockquote class="prose-quote">
+                        “The promise is safety through obedience; the cost is personal autonomy.”
+                    </blockquote>
+
+                    <h4 class="font-serif text-xl font-bold text-black mb-4">Responsibility vs. Function</h4>
+                    <p class="mb-6">
+                        What does the army actually teach people about responsibility? In daily life, responsibility isn’t about moral reflection or abstract virtue. It’s about function. You’re told what to do, how to do it, and when. Responsibility means being accountable for execution, not for judgment. It’s not about why you did something, but whether you did it right.
+                    </p>
+                    <p class="mb-6">
+                        But here’s the tension: the system depends on people not thinking too much—yet it also punishes anyone who “should have known better.” Soldiers quickly learn that what’s rewarded isn’t initiative, but predictable reliability. So people internalize a rule of survival: don’t make waves, don’t get noticed, don’t get blamed.
+                    </p>
+
+                    <h4 class="font-serif text-xl font-bold text-black mb-4">The Gray Zone of Discipline</h4>
+                    <p class="mb-6">
+                        What is discipline, really, in the army? It’s easy to mistake it for blind obedience—the ability to follow orders instantly. But in practice, discipline isn’t just about control; it’s about stability under pressure. It’s what keeps a unit functioning when everything else—fear, confusion, fatigue—breaks down.
+                    </p>
+                    <p class="mb-6">
+                        Yet the strange thing is this: the more rigid the system tries to make discipline, the more improvised it becomes on the ground. In theory, every action should be ordered. In reality, soldiers constantly adjust, cut corners, anticipate—not out of defiance, but to keep things efficient. So what we call “discipline” often lives in a gray zone between obedience and adaptation.
+                    </p>
+                    <blockquote class="prose-quote">
+                        “Discipline demands conformity, but survival depends on discretion.”
+                    </blockquote>
+
+                    <h4 class="font-serif text-xl font-bold text-black mb-4">Internalizing the Rhythm</h4>
+                    <p class="mb-6">
+                        How does a soldier learn discipline? Not from lectures, and not really from punishments either. It’s learned through repetition until reflex replaces hesitation. Every inspection, every shouted command, every synchronized movement trains the body first—then the mind follows. Discipline starts as external pressure but slowly becomes internal rhythm.
+                    </p>
+                    <p class="mb-6">
+                        You begin to measure time differently: wake-up, formation, meal, drill. The structure starts to live inside you. Even when you’re off duty, part of you still listens for orders that aren’t coming. That’s the subtle victory of the system—it rewires instinct.
+                    </p>
+
+                    <h4 class="font-serif text-xl font-bold text-black mb-4">Obedience vs. Submission</h4>
+                    <p class="mb-6">
+                        Some internalize discipline while others resist it. The difference lies in where each person locates meaning. I’ve tried to perfect even small routines—cleaning, walking properly—and discipline became a personal code. It’s a way to preserve agency in a place where agency is mostly taken away.
+                    </p>
+                    <p class="mb-6">
+                        Others, though, see the same structure as purely external. To them, the army’s demands feel like an imposition to be endured, not integrated. To internalize discipline requires a certain philosophical acceptance—the idea that form itself can be a kind of freedom.
+                    </p>
+                    <p class="mb-6">
+                        So in the army, obedience is constant, but submission is optional. Some obey with resentment, others with intention. Both are compliant—only one is transformed.
+                    </p>
+                    <blockquote class="prose-quote">
+                        “Discipline isn’t what’s done to you; it’s what you decide it means. It’s the act of reclaiming authorship over what looks like constraint.”
+                    </blockquote>
+                </div>
+            </details>
+<details class="group bg-white border border-gray-200 overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300 mt-4">
+                <summary class="flex justify-between items-center cursor-pointer p-8 bg-white">
+                    <div>
+                        <span class="text-xs font-mono text-text-muted uppercase tracking-wider mb-2 block">Essay V</span>
+                        <h3 class="font-serif text-2xl mb-2">Six Days of Ordinary Freedom</h3>
+                        <p class="text-text-muted text-sm italic">Nov 3-8: Brief awakenings into the life once took for granted.</p>
+                    </div>
+                    <span class="transform group-open:rotate-180 transition-transform duration-300 text-gray-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </span>
+                </summary>
+                
+                <div class="px-8 pb-12 pt-4 max-w-2xl mx-auto leading-loose text-gray-700">
+                    <p class="mb-6 first-letter:text-5xl first-letter:font-serif first-letter:float-left first-letter:mr-3 first-letter:mt-[-10px]">
+                        It’s strange how much changes in four months. This was my first leave—from November 3 to 8—and somehow it felt both busy and fleeting. Between banks, errands, and catching up, the days disappeared before I could even settle in.
+                    </p>
+                    <p class="mb-6">
+                        When I first came home, my cat Haku did not recognize me right away. He sniffed, hesitated—and then seemed to remember. It was a small moment, but it hit me harder than I expected.
+                    </p>
+
+                    <h4 class="font-serif text-xl font-bold text-black mb-4">The Texture of Normal Days</h4>
+                    <p class="mb-6">
+                        The bed felt softer than I remembered. The desk, the iPad, even the quiet of the study—all of it felt unfamiliar at first, then suddenly indispensable. Four months ago, these were just parts of everyday life. Now, they feel like luxuries.
+                    </p>
+                    <blockquote class="prose-quote">
+                        “What changed isn’t the house—it’s the awareness.”
+                    </blockquote>
+                    <p class="mb-6">
+                        Just sitting still, hearing the music from my laptop or the faint sound of Mom watching videos while I’m in another room—those moments feel sacred now. They remind me of how absurdly restrictive this military life can be, how much it erases the texture of normal days.
+                    </p>
+
+                    <h4 class="font-serif text-xl font-bold text-black mb-4">Brief Awakenings</h4>
+                    <p class="mb-6">
+                        When I walked home from the barbershop today—down the familiar Maple Xi road—Mom told me she hadn’t walked that way much since I enlisted. I could sense the quiet that settled over the house in my absence. Dad hadn’t talked much, and my sister had kept her door closed. For a brief moment during my first leave, my family was whole.
+                    </p>
+                    <p class="mb-6">
+                        Tomorrow I go back. I’ve taken pictures of the house, the jogging path next to the Han River, the streets I used to walk without thinking. I know that once I’m back in uniform, these memories will start to blur—like the visits after basic training. They always feel like dreams once they’re over.
+                    </p>
+                    <p class="mb-6">
+                        Maybe that’s what these short leaves are: brief awakenings into the life you once took for granted.
+                    </p>
+                </div>
+            </details>
+        </section>
+
+        <section id="creative" class="mb-28 fade-in delay-300">
+            <h2 class="font-serif text-3xl mb-12">Creative Works</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <div class="md:col-span-1">
+                    <h3 class="text-xs font-bold uppercase tracking-widest mb-4">B-flat Clarinet</h3>
+                    <p class="text-sm text-text-muted leading-relaxed mb-4">
+                        Served as band concert master at Takoma Park Magnet School. 
+                    </p>
+                    <blockquote class="text-xs text-text-muted italic border-l-2 border-gray-300 pl-3">
+                        "I always had a sense of pride when playing in the band..."
+                    </blockquote>
+                </div>
+                <div class="md:col-span-2">
+                    <h3 class="text-xs font-bold uppercase tracking-widest mb-4">Arrangements & AI Composition</h3>
+                    <ul class="space-y-4 text-sm text-text-muted">
+                        <li class="border-b border-gray-100 pb-2"><span class="text-black font-medium">Turandot Act 2</span> (Transcribed)</li>
+                        <li class="border-b border-gray-100 pb-2"><span class="text-black font-medium">Pirates of the Caribbean</span> (French Horn adaptation)</li>
+                        <li class="border-b border-gray-100 pb-2"><span class="text-black font-medium">Better Days.mp3</span> (Suno AI)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="archive" class="mb-20 fade-in delay-300">
+            <h2 class="font-serif text-3xl mb-12">Archive</h2>
+            <div class="space-y-4">
+                <div class="flex flex-col md:flex-row md:items-center justify-between group cursor-pointer">
+                    <h3 class="text-lg font-medium group-hover:underline decoration-1 underline-offset-4">The Architecture of Forgetting</h3>
+                    <span class="text-sm text-text-muted">Narrative Reconstruction in Nolan’s Memento</span>
+                </div>
+                <div class="flex flex-col md:flex-row md:items-center justify-between border-t border-gray-100 pt-4">
+                    <span class="text-text-muted">University Activity Files</span>
+                </div>
+                <div class="flex flex-col md:flex-row md:items-center justify-between border-t border-gray-100 pt-4">
+                    <span class="text-text-muted">Wall Street Journal Archives</span>
+                </div>
+            </div>
+        </section>
+
+        <footer class="pt-20 border-t border-gray-300 fade-in text-center md:text-left">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0"><span class="font-serif font-bold text-lg">J. Hong</span></div>
+                <div class="text-xs text-text-muted">© Jongpyo Hong 2025. All rights reserved.</div>
+            </div>
+        </footer>
+
+    </main>
+</body>
+</html>
