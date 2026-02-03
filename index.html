@@ -208,74 +208,218 @@
                             </span>
                         </summary>
                         
-                        <div class="px-8 pb-12 pt-8 text-xs md:text-sm text-text-muted leading-relaxed font-mono bg-gray-50 border-t border-gray-100">
+                        <div class="px-8 pb-12 pt-8 text-sm text-gray-700 leading-relaxed font-serif">
                             
-                            <div class="mb-8 pb-6 border-b border-gray-200">
-                                <p class="font-bold text-black mb-1">Jongpyo Hong et al.</p>
-                                <p>Nano Science and Engineering, Integrated Science and Engineering Division</p>
-                                <p>Underwood International College, Yonsei University</p>
+                            <div class="mb-8 pb-6 border-b border-gray-200 font-sans text-xs text-text-muted">
+                                <p class="font-bold text-black text-sm mb-2">Jongpyo Hong (2022199013)¹, Siwon Park², Su-Bong Lee², Young-Min Kim², Sangyeop Kim², and Jong-Souk Yeo (advisor)¹²</p>
+                                <p>1. Nano Science and Engineering, Integrated Science and Engineering Division, Underwood International College, Yonsei University</p>
+                                <p>2. School of Integrated Technology, College of Computing Yonsei University</p>
+                                <p class="italic mt-1">jongsoukyeo@yonsei.ac.kr</p>
                             </div>
 
-                            <div class="mb-8">
-                                <h5 class="font-bold text-black mb-2 text-sm uppercase">Abstract</h5>
-                                <p>
-                                    The integration of phase change memory (PCM) with ovonic threshold switching (OTS) selectors in a 3D crosspoint array  has gained attention for its potential and its promising developments in memory technology. Stability and scalability of the integration of PCM with OTS remain a challenge, particularly due to the instability in the threshold voltage of OTS devices from the application of pulses.
-                                </p>
-                                <p class="mt-4">
-                                    This research capitalizes on the instability of the threshold voltage and investigates the impact of pulse rise and fall time and external resistor on threshold voltage shift in a Te-based OTS device to enhance the read window margin (RWM). By varying pulse durations, this research demonstrates that shorter pulses show greater shifts in threshold voltage. This research also demonstrates that addition of higher resistance with external resistors increases the magnitude of both positive and negative threshold voltage shifts.
-                                </p>
-                            </div>
-
-                            <div class="mb-8">
-                                <h5 class="font-bold text-black mb-2 text-sm uppercase">1. Introduction</h5>
-                                <p>
-                                    The physical segregation of processor and memory units in the traditional von Neumann architecture heavily restricts the amount of data that can be transferred, a phenomenon known as the von Neumann bottleneck. The highly dense 3D crossbar architecture comes at a cost, however. Half-selected cells form sneak currents that could entail system failure.
-                                </p>
-                                <p class="mt-2">
-                                    Enter the ovonic threshold switching (OTS) selectors. The shift in the threshold voltage induced by the polarity of the applied pulse, initially considered an undesirable instability, can be capitalized upon to simplify the PCM-OTS stack by using only the OTS device as a memory device without the PCM, creating a selector-only memory (SOM) device.
+                            <div class="mb-10 bg-gray-50 p-6 rounded-sm">
+                                <h5 class="font-bold text-black mb-3 text-xs uppercase tracking-widest font-sans">Abstract</h5>
+                                <p class="text-sm italic">
+                                    The integration of phase change memory (PCM) with ovonic threshold switching (OTS) selectors in a 3D crosspoint array has gained attention for its potential and its promising developments in memory technology. Stability and scalability of the integration of PCM with OTS remain a challenge, particularly due to the instability in the threshold voltage of OTS devices from the application of pulses. This research capitalizes on the instability of the threshold voltage and investigates the impact of pulse rise and fall time and external resistor on threshold voltage shift in a Te-based OTS device to enhance the read window margin (RWM), which is a crucial component to realize a reliable binary data storage in selector-only memory (SOM) applications. By varying pulse durations, this research demonstrates that shorter pulses show greater shifts in threshold voltage. This research also demonstrates that addition of higher resistance with external resistors increases the magnitude of both positive and negative threshold voltage shifts. These findings provide a pathway to optimizing OTS devices for better distinction between binary states, thereby enhancing memory reliability for SOM applications.
                                 </p>
                             </div>
 
                             <div class="mb-8">
-                                <h5 class="font-bold text-black mb-2 text-sm uppercase">2. Methods</h5>
-                                <p>
-                                    This research selected Te as a substitute for Se because of its expected similar properties for they belong to the same group. After cleaning the prepared SiO2 wafer with acetone, IPA, and DI water, a bottom electrode of Tungsten is deposited via PVD. The OTS material is deposited onto the topmost layer via RF sputter .
+                                <h5 class="font-bold text-black mb-4 text-sm uppercase tracking-widest font-sans">1. Introduction</h5>
+                                <p class="mb-4">
+                                    Computers have become an indispensable part of our lives, handling from the most mundane tasks to the most demanding, specialized calculations. As the higher end of the spectrum became ever more challenging, especially with today’s furor with artificial intelligence (AI), the search for better memory that meets the requirements including, but not limited to, larger data storage, faster operating speed, better endurance, and greater density has become imperative [1]. The physical segregation of processor and memory units in the traditional von Neumann architecture heavily restricts the amount of data that can be transferred, a phenomenon known as the von Neumann bottleneck [2]. Not only that, but also the traditional charge-based memory devices have low scalability and are power inefficient [3]–[6].
                                 </p>
-                                <p class="mt-2">
-                                    This paper focuses on NSiTe device. Using this device, the pulse rise and fall times were initially varied, and the effect on the magnitude of threshold voltage shift was measured. Next, the external resistor applied to the system was varied.
+                                <p class="mb-4">
+                                    The advent of 3D-stacking memory technology was a step toward satiating the greater density requirement. Employing phase change memory (PCM) cells in a cross-point architecture showed promising results in terms of endurance and scalability [7]. PCM, one of the resistive switching materials (RSMs) that takes advantage of phase transitions between amorphous and crystalline states that exhibit significantly different electrical resistance [2], secured its spot among the numerous candidates for revolutionizing memory.
+                                </p>
+                                <p class="mb-4">
+                                    The highly dense 3D crossbar architecture comes at a cost, however. Word and bit lines can be visualized as skew lines on parallel planes that are connected by the two opposite terminals of a single cell. The word and bit line to which the cell is connected are selected to select a target PCM cell. Since multiple cells belong to either the selected word line or bit line, these cells are half-selected, forming sneak currents [8] that could further entail system failure [9]. Something that selectively allows current to the target cell while suppressing sneak current in others was necessary.
+                                </p>
+                                <p class="mb-4">
+                                    Enter the ovonic threshold switching (OTS) selectors, chalcogenide-based materials that exhibit high electrical resistance below the threshold voltage and low electrical resistance above the threshold voltage. This makes it possible to apply a voltage to the word and bit line of the target memory cell so that the applied voltage to the target cell is above the threshold voltage while the half-selected cells receive less than the threshold voltage. Hence only the target memory cell is selected while the other half-selected cells have negligible current. The combination of PCM cells with OTS selectors in the 3D crosspoint array is thus vital.
+                                </p>
+                                <p class="mb-4">
+                                    However, this method of employing PCM with an OTS selector has problems of its own. The integration of the two different layers of PCM and OTS makes the fabrication process difficult, and the scaled distance between cells further worsens the thermal issues of PCM [11]. Although a selector is needed for PCM to function properly, the stack must be simplified further. Additionally, the threshold voltage of the OTS device is unstable, being noticeably influenced by the pulse applied. Previous studies have reported that an OTS selector exhibits a shift in its threshold voltage as a response to a change in the width, amplitude, ramp rate, and polarity of the pulse [12]–[15].
+                                </p>
+                                <p class="mb-4">
+                                    The shift in the threshold voltage induced by the polarity of the applied pulse, initially considered an undesirable instability, can be capitalized upon to simplify the PCM-OTS stack by using only the OTS device as a memory device without the PCM, creating a selector-only memory (SOM) device. The disparity between the subsequent threshold voltages due to the polarity-induced threshold voltage shift can be utilized to store and retrieve memory. Specifically, a pulse with a value between the two threshold voltages can be applied, and depending on the previously applied pulse, the resulting current will vary: if the pulse is higher than the threshold, there will be a significant current, and if the pulse is lower than the threshold, there will be negligible current. This measurement of resulting current will help ascertain whether the threshold voltage is high or low, which represent the binary values of 0 and 1.
+                                </p>
+                                <p class="mb-4">
+                                    The use of a pulse between the threshold voltage values necessitates that the read window margin (RWM), the difference between the high threshold voltage and the low threshold voltage, be as wide as possible. A greater shift in the threshold voltage is desired as it would allow a clearer distinction between the binary 0 and 1 and hence less prone to errors. Therefore, this research seeks to address the need to enlarge the RWM by modulating the applied pulse. An external resistor was added to the device to alleviate the stress applied to the device by sudden increases in current, and it was observed that resistance also affects the change in threshold voltage. This paper thus investigates the effect of pulse rise and fall time and an external resistor on the change in threshold voltage.
                                 </p>
                             </div>
 
                             <div class="mb-8">
-                                <h5 class="font-bold text-black mb-2 text-sm uppercase">3. Results and Discussion</h5>
+                                <h5 class="font-bold text-black mb-4 text-sm uppercase tracking-widest font-sans">2. Methods</h5>
+                                <p class="mb-4">
+                                    A previous research study discovered that Se-based OTS exhibits a strong polarity effect [16]. Although it showed a strong polarity effect, there are some disadvantages to using Se, including its toxicity [17]. The low melting point of Se also hinders its use as an ideal sputter target, complicating the fabrication process. Therefore, this research selected Te as a substitute for Se because of its expected similar properties for they belong to the same group.
+                                </p>
+                                <p class="mb-4">
+                                    After cleaning the prepared SiO2 wafer with acetone, isopropyl alcohol (IPA), and deionized (DI) water, a bottom electrode of Tungsten is deposited via PVD. SiO2 layer is deposited again on the W layer via CVD, and a photoresist is spin-coated on the topmost layer. After eliminating the desired portions via maskless photolithography, the selected portions of SiO2 are etched via ICP-RIE. After removing the photoresist, the photolithography process is repeated on the device. The OTS material is deposited onto the topmost layer via RF sputter, and after the top electrode of W is sputtered, the photoresist is removed. The bottom electrode and the top electrode are connected to the electrical probes when analyzing the electrical properties of the device.
+                                </p>
                                 
-                                <p class="mb-4"><strong>3.1 Polarity Effect:</strong> NSiTe analyzed in this research exhibited an increase in the threshold voltage for the same subsequent polarity pulses and a decrease in the threshold voltage for the opposite subsequent polarity pulses.</p>
+                                <div class="my-6 p-8 bg-gray-50 border-2 border-dashed border-gray-200 text-center">
+                                    <p class="text-xs text-text-muted italic">[Image Placeholder: Fabrication Steps]</p>
+                                    <p class="text-xs font-bold mt-2">Fig. 1 Fabrication steps of the Te-based OTS devices.</p>
+                                </div>
 
-                                <p class="mb-4"><strong>3.2 Pulse Rise/Fall Time:</strong> With the external resistor fixed at 330 ohms, the rise and fall time was varied (1, 2, 4, 8 μs). In both the positive and negative branch, the magnitude of the threshold voltage shift decreases as pulse rise and fall time increases. Therefore, to increase the RWM, shorter pulse rise and fall time should be chosen.</p>
-                                
-                                <p class="mb-4"><strong>3.3 External Resistor:</strong> Various resistors ranging from 110 ohms to 680 ohms were applied. The magnitude of threshold voltage shift increases as the resistance of the applied external resistor increases. This disparity may be explained by the Joule heating effect. An increase in resistance leads to a decrease in Joule heating (145K → 53K), decreasing heat-assisted ion migration.</p>
+                                <p class="mb-4">
+                                    This paper focuses on NSiTe device. Fig. 2 depicts the simple model of the final product of the fabricated device. Using this device, the pulse rise and fall times were initially varied, and the effect on the magnitude of threshold voltage shift was measured. Next, the external resistor applied to the system was varied, and its effect on the threshold voltage shift was also measured.
+                                </p>
+
+                                <div class="my-6 p-8 bg-gray-50 border-2 border-dashed border-gray-200 text-center">
+                                    <p class="text-xs text-text-muted italic">[Image Placeholder: Final Device Model]</p>
+                                    <p class="text-xs font-bold mt-2">Fig. 2 Final product of the fabricated device.</p>
+                                </div>
                             </div>
 
                             <div class="mb-8">
-                                <h5 class="font-bold text-black mb-2 text-sm uppercase">4. Conclusion</h5>
-                                <p>
-                                    The experimental results present a clear trend: decreasing pulse time leads to a greater threshold voltage shift, and increasing resistance of the external resistor leads to a more pronounced shift. The findings highlight the crucial role of pulse time and external resistors in increasing RWM to improve the distinction between binary states and reducing error rates in memory operations.
+                                <h5 class="font-bold text-black mb-4 text-sm uppercase tracking-widest font-sans">3. Results and Discussion</h5>
+                                
+                                <strong class="block text-black mb-2 text-xs uppercase font-sans">3.1. Polarity Effect in Device and Suitable Scheme</strong>
+                                <p class="mb-4">
+                                    NSiTe, fabricated via the aforementioned RF co-sputtering process, exhibited a good general trend of polarity-induced threshold voltage shift. It is notable that the direction of the shift is different from the phenomenon referred to in a previous study: the aforementioned polarity effect described a decrease in the threshold voltage for same subsequent polarity pulses and an increase in the threshold voltage for opposite subsequent polarity pulses [15]. NSiTe analyzed in this research, however, exhibited an increase in the threshold voltage for the same subsequent polarity pulses and a decrease in the threshold voltage for the opposite subsequent polarity pulses.
+                                </p>
+                                <p class="mb-4">This paper follows the convention of the threshold voltage shift as shown in Equation (1).</p>
+                                
+                                <div class="my-4 p-4 bg-gray-50 overflow-x-auto text-center font-mono text-xs md:text-sm">
+                                    $$ \Delta V_{th} = |\!V_{th}^{opp}\!| - |\!V_{th}^{same}\!| $$
+                                </div>
+
+                                <p class="mb-4">
+                                    The superscript “opp” and “same” refer to the relative polarity of the read pulse to the previous write pulse. Therefore, Equation (1) can be further specified into two separate regions of the negative and positive branches, depicted in Equation (2) and (3).
+                                </p>
+
+                                <div class="my-4 p-4 bg-gray-50 overflow-x-auto text-center font-mono text-xs md:text-sm">
+                                    <p class="mb-2">$$ \Delta V_{th}^{\mathrm{POS}} = \left| V_{th,\mathrm{NEG}}^{\mathrm{POS}} \right| - \left| V_{th,\mathrm{POS}}^{\mathrm{POS}} \right| $$</p>
+                                    <p>$$ \Delta V_{th}^{\mathrm{NEG}} = \left| V_{th,\mathrm{POS}}^{\mathrm{NEG}} \right| - \left| V_{th,\mathrm{NEG}}^{\mathrm{NEG}} \right| $$</p>
+                                </div>
+
+                                <p class="mb-4">
+                                    The superscript is the polarity of the read pulse, and the subscript is the polarity of the previous write pulse. Since the device of focus in this research generally showed an increase in threshold voltage from subsequent positive pulse and a decrease in the absolute value of threshold voltage from subsequent negative pulse, \( \left| V_{th,\mathrm{POS}}^{\mathrm{POS}} \right| \) is greater than \( \left| V_{th,\mathrm{NEG}}^{\mathrm{POS}} \right| \), and \( \left| V_{th,\mathrm{NEG}}^{\mathrm{NEG}} \right| \) is less than \( \left| V_{th,\mathrm{POS}}^{\mathrm{NEG}} \right| \), and hence, \( \Delta V_{th}^{\mathrm{POS}} < 0 \) and \( \Delta V_{th}^{\mathrm{NEG}} > 0 \).
+                                </p>
+                                <p class="mb-4">
+                                    Devices that showed SOM characteristics in previous studies have generally shown a decrease in the threshold voltage when the write and read pulses are of the same polarity and an increase in the threshold voltage when they are of opposite polarity [16]. Therefore, the application of the device to practical memory uses the following scheme depicted in Fig. 3: when there is no initial write pulse, the read pulse will be the first pulse applied. This read pulse will be lower than the high threshold voltage, so there will be negligible current. This negligible current is translated to binary value of 0, meaning no data is stored. If there was an initial write pulse, the write pulse sets the high threshold voltage. The following read pulse will decrease the threshold voltage. This read pulse is higher than the lower threshold voltage, so there will be significant current. This high current is translated to binary value of 1, meaning data was stored. A reset pulse in the opposite negative direction is applied, and the cycle continues.
+                                </p>
+
+                                <div class="my-6 p-8 bg-gray-50 border-2 border-dashed border-gray-200 text-center">
+                                    <p class="text-xs text-text-muted italic">[Image Placeholder: Application Scheme Previous]</p>
+                                    <p class="text-xs font-bold mt-2">Fig. 3 Scheme for application of previously studied OTS devices for SOM use.</p>
+                                </div>
+
+                                <p class="mb-4">
+                                    The NST device of this research, however, exhibits a different polarity-induced threshold voltage shift: the threshold voltage increases when the write and read pulses are of the same polarity. Fig. 4 shows the increase in the threshold voltage from the first black pulse to the next red pulse. Therefore, the application of this device requires a new scheme depicted in Fig. 5. If there was no write pulse, the first pulse applied will be the read pulse. This read pulse will set a low threshold voltage, and since this read pulse is higher than the low threshold voltage, there will be significant current. This significant current is translated to binary value of 0, meaning no data is stored. On the other hand, if there was a write pulse, the low threshold voltage will be set initially. The following read pulse will increase the threshold voltage. Since this threshold voltage is higher than the read pulse, there will be negligible current. This negligible current is translated to binary value of 1, meaning that there is data stored. A reset pulse in the opposite negative direction is applied, and the cycle continues.
+                                </p>
+
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
+                                    <div class="p-6 bg-gray-50 border-2 border-dashed border-gray-200 text-center">
+                                        <p class="text-xs text-text-muted italic">[Image Placeholder: Voltage Shift Graph]</p>
+                                        <p class="text-xs font-bold mt-2">Fig. 4 Threshold voltage shift in positive branch.</p>
+                                    </div>
+                                    <div class="p-6 bg-gray-50 border-2 border-dashed border-gray-200 text-center">
+                                        <p class="text-xs text-text-muted italic">[Image Placeholder: New Application Scheme]</p>
+                                        <p class="text-xs font-bold mt-2">Fig. 5 Scheme for application of NSiTe device.</p>
+                                    </div>
+                                </div>
+                                
+                                <strong class="block text-black mb-2 text-xs uppercase font-sans mt-8">3.2. Impact of Pulse Rise and Fall Time on Vth Shift</strong>
+                                <p class="mb-4">
+                                    To explore the different responses of the device to different stimuli, the rise and fall time of pulse applied was first varied into 1, 2, 4, and 8microseconds. However, the input voltage values showed a distinct kink that represents an overshoot due to sudden surge of uncontrolled signal when the switching takes place. This kink hinders accurate reading of the threshold voltage and represented the wearing of the device due to the stress applied by the sudden increase in current. To eliminate this kink and mitigate the stress on the device, an external resistor of 330 ohms was added to the device.
+                                </p>
+                                <p class="mb-4">
+                                    With the external resistor fixed at 330 ohms, the rise and fall time of the applied pulse was again varied. Fig. 6 shows the change in the magnitude of the threshold voltage shift in the positive and negative branches as the pulse rise and fall time is varied. In both the positive and negative branch, the magnitude of the threshold voltage shift decreases as pulse rise and fall time increases. Therefore, to increase the RWM, shorter pulse rise and fall time should be chosen.
+                                </p>
+
+                                <div class="my-6 p-8 bg-gray-50 border-2 border-dashed border-gray-200 text-center">
+                                    <p class="text-xs text-text-muted italic">[Image Placeholder: Rise/Fall Time Graph]</p>
+                                    <p class="text-xs font-bold mt-2">Fig. 6 Change in magnitude of threshold voltage shift.</p>
+                                </div>
+
+                                <p class="mb-4">
+                                    It should be noted that there were no significant SOM characteristics exhibited by the device when a pulse time of nanoseconds was applied. It was at the microsecond regime in which the device began to show SOM characteristics. Therefore, a shorter pulse time in the microsecond regime should be chosen to optimize for SOM performance. The disparity between nanosecond regime and microsecond regime suggests that sufficient time is needed for a physical change to take place within the device. Perhaps ion migration, with their masses greater than mass of electrons, may be responsible for the longer pulse time required to observe SOM characteristics.
+                                </p>
+                                <p class="mb-4">
+                                    To observe why longer pulse rise and fall time leads to a decrease in the threshold voltage shift, the change in temperature from the different pulse times were compared to observe the effect of Joule heating. Using the applied voltage and current, power could be retrieved by Equation (4).
+                                </p>
+                                <div class="my-4 p-4 bg-gray-50 text-center font-mono text-xs md:text-sm">
+                                    $$ P=VI $$
+                                </div>
+                                <p class="mb-4">The power could be used to retrieve energy applied to the device by Equation (5).</p>
+                                <div class="my-4 p-4 bg-gray-50 text-center font-mono text-xs md:text-sm">
+                                    $$ E = \int P\,dt $$
+                                </div>
+                                <p class="mb-4">Since the specific heat capacity of the device is not known, proportionality Equation (6) of energy to the change in temperature is used.</p>
+                                <div class="my-4 p-4 bg-gray-50 text-center font-mono text-xs md:text-sm">
+                                    $$ E \propto \Delta T $$
+                                </div>
+                                <p class="mb-4">
+                                    From these equations, the ratio of the change in temperatures for the pulse rise and fall time of \(1\ \mu s:2\ \mu s:4\ \mu s:8\ \mu s\) is \(62K:91K:236K:468K\), indicating that an increase in pulse rise and fall time leads to an increase in Joule heating effect. This increase in Joule heating may facilitate atomic migration [16], decreasing the threshold voltage and thereby decreasing the scope for change in the threshold voltage, which is measured as the change in the threshold voltage. Ravsher et al. noted that Joule heating in the high operating current regime may confirm the presence of atomic segregation [16], and the NSiTe device operating in the similar high operating current regime (»4 mA) seems to follow this previous study’s observation.
+                                </p>
+                                <p class="mb-4">
+                                    The extent of the change in threshold voltage can be further analyzed by observing percent changes from 1 to 2microseconds, 2 to 4microseconds, and 4 to 8microseconds. The percent change of threshold voltage shift and the percent change in temperature change can be compared to determine whether the changes parallel each other. As pulse time increased, the percent changes in change in temperature were 46.77%, 159.34%, and 98.31%. The percent change in the threshold voltage shifts in positive and negative branches were -40.01%, -0.97%, and -20.82%, and -25.35%, -15.11%, and -12.77%, respectively. The extent of temperature increase seems to generally increase as pulse time increases, but the extent of threshold voltage shift decreases. Assuming ion migration, as the rate of temperature change increases, the rate of threshold voltage shift should increase, but this is not the case as shown in percent changes. This may be due to the ion aggregation over same subsequent polarity pulses that exerts force on other ions in the opposite direction, making it more difficult for ions to migrate to conduct current. Hence, these aggregated ions may partially counteract the decrease in the threshold voltage, which is exhibited by the decreasing rate of threshold voltage shift. By applying the opposite reset pulse, the aggregated ions may return to their original locations either partially or completely, allowing the device to go through the cycle again.
+                                </p>
+
+                                <strong class="block text-black mb-2 text-xs uppercase font-sans mt-8">3.3. Impact of External Resistor on Vth Shift</strong>
+                                <p class="mb-4">
+                                    While varying the external resistor to eliminate the kink, differences in the threshold voltage shifts were observed. To explore more on the effect of external resistors on the polarity effect, various resistors that range from 110 ohms to 680 ohms were applied and measured. As shown in Fig. 7 (listed as Fig. 8 in text), the magnitude of threshold voltage shift in both the positive and negative branches increase as the resistance of the applied external resistor increases. Therefore, the application of an external resistor with higher resistance seems to be a better selection to achieve a greater RWM.
+                                </p>
+
+                                <div class="my-6 p-8 bg-gray-50 border-2 border-dashed border-gray-200 text-center">
+                                    <p class="text-xs text-text-muted italic">[Image Placeholder: Resistor Graph]</p>
+                                    <p class="text-xs font-bold mt-2">Fig. 7 Change in threshold voltage shift vs external resistor.</p>
+                                </div>
+
+                                <p class="mb-4">
+                                    This disparity in the magnitude of the threshold voltage shift may also be explained by Joule heating effect. Joule heating is generated due to large current passing through the device as stated by Ravsher et al. [16]. The current that flows through the device with 680 ohms resistor (»2 mA) is still within the high operating current regime [16], indicating that Joule heating may still be sufficient to assist ion migration. Using the same set of Equations (4), (5), and (6), the ratio of the change in temperature for the external resistor of 110W: 330W:680W is 145K:91K:53K, indicating that an increase in resistance of the external resistor leads to a decrease in Joule heating effect. This decrease in Joule heating may decrease the extent of heat-assisted ion migration, increasing the threshold voltage. As the threshold voltage increases, the scope for change in the threshold voltage increases.
+                                </p>
+
+                                <strong class="block text-black mb-2 text-xs uppercase font-sans mt-8">3.4 Future Works</strong>
+                                <p class="mb-4">
+                                    To fully utilize the OTS devices for SOM applications, the threshold voltage must return to the initial threshold voltage after a full cycle (PNN or NPP sequence). The focus then shifts from increasing the RWM to stabilizing the threshold voltage value after applying the same sequence numerous times. Instead of utilizing write and read voltage solely to write and read, additional pulses may be applied after reading and before resetting the device (i.e., instead of PNNPNN, apply PNN…NPNN…N) may further optimize the stability of the set threshold voltage for SOM applications.
                                 </p>
                             </div>
-                            
-                            <div class="mb-8 border-t border-gray-200 pt-4">
-                                <h5 class="font-bold text-black mb-2 text-sm uppercase">5. Selected References</h5>
-                                <ul class="list-decimal list-inside space-y-1 text-xs">
-                                    <li>Zhu, Min & Ren, Kun & Song, Zhitang. (2019). Ovonic threshold switching selectors...</li>
-                                    <li>Wang, Zhongrui et al. (2020). Resistive switching materials for information processing...</li>
-                                    <li>Lai, S. (2009). Non-Volatile memory technologies...</li>
-                                    <li>Ravsher, Taras et al. (2023). Polarity-Induced Threshold Voltage Shift...</li>
+
+                            <div class="mb-8">
+                                <h5 class="font-bold text-black mb-4 text-sm uppercase tracking-widest font-sans">4. Conclusion</h5>
+                                <p class="mb-4">
+                                    This study delves into the effects of pulse rise and fall time and external resistance on the shift in threshold voltage in NSiTe ovonic threshold switch (OTS) device. It highlights their significance for enhancing the read window margin (RWM) in selector-only memory (SOM) applications. The experimental results present a clear trend: decreasing pulse time leads to a greater threshold voltage shift, and increasing resistance of the external resistor leads to a more pronounced shift. Several factors including controlled current flow and resulting Joule heating effect are proposed as responsible for these shifting behaviors.
+                                </p>
+                                <p class="mb-4">
+                                    The findings highlight the crucial role of pulse time and external resistors in increasing RWM to improve the distinction between binary states and reducing error rates in memory operations. This research contributes insights into the optimization of OTS-based memory systems, paving the way for more robust yet simplified SOM solutions.
+                                </p>
+                                <p class="mb-4">
+                                    Future works should focus on further increasing the threshold voltage shift and stabilizing the set threshold voltage after repetitive cycle of set and reset pulses for practical use of SOM devices. Moreover, investigating long-term reliability and endurance of these devices will be essential for their practical implementation as SOM devices.
+                                </p>
+                            </div>
+
+                            <div class="mb-8 border-t border-gray-200 pt-6">
+                                <h5 class="font-bold text-black mb-4 text-sm uppercase tracking-widest font-sans">5. References</h5>
+                                <ul class="list-decimal list-outside ml-4 space-y-2 text-xs text-text-muted font-sans">
+                                    <li>Zhu, Min & Ren, Kun & Song, Zhitang. (2019). Ovonic threshold switching selectors for three-dimensional stackable phase-change memory. MRS Bulletin. 44. 715-720.</li>
+                                    <li>Wang, Zhongrui et al. (2020). Resistive switching materials for information processing. Nature Reviews Materials. 5. 1-23.</li>
+                                    <li>Waser, Rainer & AONO, MASAKAZU. (2009). Nanoionics-based resistive switching memories.</li>
+                                    <li>Lee, Myoung-Jae et al. (2011). A Fast, High-Endurance and Scalable Non-Volatile Memory Device Made from Asymmetric Ta2O5−X/TaO2−X Bilayer Structures. Nature materials.</li>
+                                    <li>Yang, Jianhua Joshua et al. (2010). High switching endurance in TaOx memristive devices. Applied Physics Letters. 97. 232102.</li>
+                                    <li>Miao, Feng et al. (2011). Anatomy of a Nanoscale Conduction Channel Reveals the Mechanism of a High-Performance Memristor. Advanced materials. 23. 5633-40.</li>
+                                    <li>Lai, S. (2009). Non-Volatile memory technologies: The quest for ever lower cost. IEDM Tech. Dig. 1 - 6.</li>
+                                    <li>Burr, Geoffrey et al. (2014). Access devices for 3D crosspoint memory. Journal of vacuum science & technology B. 32. 040802.</li>
+                                    <li>Park, Chaebin. (2023). Toward Scalable and Sustainable Selector: Ovonic Threshold Switching N-Si-Ge-Te Chalcogenide Selector for 3D Crossbar Neuromorphic Applications [Master’s thesis]. Yonsei University.</li>
+                                    <li>Lee, Jangseop et al. (2023). Enhancing Se-based Selector-only Memory with Ultra-fast Write Speed (~ 10 ns)...</li>
+                                    <li>Hong, Seokman et al. (2022). Extremely high performance, high density 20nm self-selecting cross-point memory...</li>
+                                    <li>Ban, Sanghyun et al. (2020). Pulse Dependent Threshold Voltage Variation of the Ovonic Threshold Switch...</li>
+                                    <li>Ravsher, Taras et al. (2021). Polarity-dependent threshold voltage shift in ovonic threshold switches...</li>
+                                    <li>Chai, Zheng et al. (2019). Dependence of switching probability on operation conditions in GexSe1-x...</li>
+                                    <li>Ravsher, Taras et al. (2023). Self-Rectifying Memory Cell Based on SiGeAsSe Ovonic Threshold Switch...</li>
+                                    <li>Ravsher, Taras et al. (2023). Polarity‐Induced Threshold Voltage Shift in Ovonic Threshold Switching...</li>
+                                    <li>Hamilton, Steven. (2004). Review of selenium toxicity in the aquatic food chain. The Science of the Total Environment. 326. 1-31.</li>
                                 </ul>
                             </div>
 
                         </div>
                     </details>
                 </div>
+                
+            </div>
 
 <div class="bg-white border border-gray-200 shadow-sm overflow-hidden rounded-sm mt-8">
                 <details class="group">
