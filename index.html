@@ -387,13 +387,87 @@
                 </div>
             </div>
                 
-                <div class="mt-4 text-xs text-text-muted pl-1">
-                    <p class="mb-1 font-semibold text-black">Additional Works:</p>
-                    <ul class="list-disc list-inside space-y-1">
+<div class="bg-white border border-gray-200 shadow-sm overflow-hidden rounded-sm mt-8">
+                <details class="group">
+                    <summary class="flex justify-between items-center cursor-pointer p-8 hover:bg-gray-50 transition-colors">
+                        <div>
+                            <span class="text-xs font-mono text-text-muted mb-2 block">History & Theory</span>
+                            <h4 class="font-serif text-xl md:text-2xl mb-2 leading-snug">
+                                Quantum Einstein, Bohr, and the Great Debate
+                            </h4>
+                            <p class="text-text-muted text-sm italic">
+                                Notes on the history of the quantum revolution & mathematical derivations.
+                            </p>
+                        </div>
+                        <span class="transform group-open:rotate-180 transition-transform duration-300 text-gray-400">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </span>
+                    </summary>
                     
-                        <li>Quantum Einstein, Bohr, and the Great Debate About the Nature of Reality.</li>
-                    </ul>
-                </div>
+                    <div class="px-8 pb-12 pt-4 text-sm text-gray-700 leading-relaxed font-mono">
+                        
+                        <h5 class="font-bold text-black mb-4 uppercase text-xs tracking-widest border-b border-gray-200 pb-2">I. The Discovery of the Nucleus</h5>
+                        <ul class="list-disc list-inside space-y-2 mb-6 text-xs text-text-muted">
+                            <li><strong>Rontgen (1895):</strong> Discovered X-rays ("I did not think; I investigated").</li>
+                            <li><strong>Becquerel & Curie:</strong> Discovered radioactivity; realized it was an atomic phenomenon.</li>
+                            <li><strong>Rutherford's Gold Foil:</strong> 
+                                <span class="block ml-4 mt-1 p-2 bg-gray-50 border-l-2 border-gray-300">
+                                    Alpha particles fired at gold foil. Most passed through, but some bounced back. Conclusion: Atoms have a tiny, dense, positive nucleus.
+                                </span>
+                            </li>
+                        </ul>
+
+                        <h5 class="font-bold text-black mb-4 uppercase text-xs tracking-widest border-b border-gray-200 pb-2 mt-8">II. The Quantum Atom (Bohr)</h5>
+                        <p class="mb-4"><strong>Problem:</strong> Classical physics says orbiting electrons should radiate energy and crash into the nucleus.</p>
+                        <p class="mb-4"><strong>Bohr's Solution:</strong> "Stationary States." Electrons only occupy orbits where angular momentum is quantized.</p>
+                        
+                        <div class="bg-gray-50 p-4 border border-gray-200 rounded mb-6 text-xs">
+                            <strong class="block mb-2 text-black">Technical Note: Deriving Hydrogen Energy Levels</strong>
+                            <p class="mb-2">1. Quantization Condition:</p>
+                            <p class="mb-2 pl-2">L = m<sub>e</sub>vr = nℏ</p>
+                            
+                            <p class="mb-2">2. Centripetal Force = Coulomb Force:</p>
+                            <p class="mb-2 pl-2">m<sub>e</sub>v<sup>2</sup>/r = e<sup>2</sup> / (4&pi;&epsilon;<sub>0</sub>r<sup>2</sup>)</p>
+                            
+                            <p class="mb-2">3. Solving for Energy (E<sub>n</sub>):</p>
+                            <p class="mb-2 pl-2 font-bold text-black">E<sub>n</sub> = -13.6 eV / n<sup>2</sup></p>
+                            <p class="italic text-gray-500">Result: Explains the discrete spectral lines (Lyman, Balmer) of Hydrogen.</p>
+                        </div>
+
+                        <h5 class="font-bold text-black mb-4 uppercase text-xs tracking-widest border-b border-gray-200 pb-2 mt-8">III. Wave-Particle Duality</h5>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-6">
+                            <div>
+                                <strong class="block mb-2 text-xs uppercase text-text-muted">Arthur Compton (Particle Nature)</strong>
+                                <p class="mb-2 text-xs">X-rays colliding with electrons lose energy (wavelength increases). Proves light behaves as a particle (photon).</p>
+                                <div class="bg-gray-100 p-2 rounded text-xs">
+                                    &Delta;&lambda; = (h/m<sub>e</sub>c)(1 - cos&theta;)
+                                </div>
+                            </div>
+                            <div>
+                                <strong class="block mb-2 text-xs uppercase text-text-muted">De Broglie (Wave Nature)</strong>
+                                <p class="mb-2 text-xs">If waves act like particles, particles act like waves. Electrons form "standing waves" around the nucleus.</p>
+                                <div class="bg-gray-100 p-2 rounded text-xs">
+                                    &lambda; = h / p
+                                </div>
+                            </div>
+                        </div>
+
+                        <h5 class="font-bold text-black mb-4 uppercase text-xs tracking-widest border-b border-gray-200 pb-2 mt-8">IV. The Quantum Magicians</h5>
+                        <ul class="list-disc list-inside space-y-2 mb-6 text-xs text-text-muted">
+                            <li><strong>Heisenberg:</strong> Abandoned unobservable "orbits." Developed Matrix Mechanics based only on observable spectral frequencies.</li>
+                            <li><strong>Pauli:</strong> Exclusion Principle. Introduced "Spin" (4th quantum number) to explain the Zeeman effect (splitting of spectral lines in magnetic fields).</li>
+                            <li><strong>Schrödinger:</strong> Developed the Wave Equation (&Psi;) to describe probability density.</li>
+                            <li><strong>Born's Postulate:</strong> The square of the wavefunction |&Psi;|<sup>2</sup> represents the probability of finding a particle.</li>
+                        </ul>
+
+                        <div class="mt-4 pt-4 border-t border-gray-100 text-xs italic text-gray-400 text-right">
+                            Ref: Manjit Kumar, "Quantum" / © Jongpyo Hong 2025
+                        </div>
+
+                    </div>
+                </details>
+            </div>                
             </div>
             </div>
             </div>
