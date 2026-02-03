@@ -668,18 +668,178 @@
                 </div>
             </div>
 
-            <div>
+            <div class="mb-16">
                 <h3 class="text-xs font-bold text-accent uppercase tracking-widest mb-6">Finance & Economics</h3>
-                <ul class="space-y-6">
-                    <li class="flex flex-col">
-                        <span class="font-semibold text-lg">Systemic Risk Analysis</span>
-                        <span class="text-text-muted text-sm">Comparative Study of US Subprime Crisis & Korean Housing Debt.</span>
-                    </li>
-                    <li class="flex flex-col">
-                        <span class="font-semibold text-lg">Digital Asset Class Analysis</span>
-                        <span class="text-text-muted text-sm">Bitcoin, XRP, and Comparative Market Dynamics.</span>
-                    </li>
-                </ul>
+                
+                <div class="bg-white border border-gray-200 shadow-sm overflow-hidden rounded-sm mb-6">
+                    <details class="group">
+                        <summary class="flex justify-between items-center cursor-pointer p-8 hover:bg-gray-50 transition-colors">
+                            <div>
+                                <span class="text-xs font-mono text-text-muted mb-2 block">Theoretical Frameworks</span>
+                                <h4 class="font-serif text-xl md:text-2xl mb-2 leading-snug">
+                                    Quantitative Asset Pricing & Derivatives
+                                </h4>
+                                <p class="text-text-muted text-sm italic">
+                                    From MPT to Black-Scholes: Mathematical foundations of risk and return.
+                                </p>
+                            </div>
+                            <span class="transform group-open:rotate-180 transition-transform duration-300 text-gray-400">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                            </span>
+                        </summary>
+                        
+                        <div class="px-8 pb-12 pt-4 text-sm text-gray-700 leading-relaxed font-mono">
+                            
+                            <div class="mb-8 border-b border-gray-100 pb-8">
+                                <h5 class="font-bold text-black mb-4 uppercase text-xs tracking-widest">I. Modern Portfolio Theory & CAPM</h5>
+                                <p class="mb-4 text-xs text-text-muted">
+                                    <strong>Core Concept:</strong> Diversification reduces unsystematic risk. The Efficient Frontier represents portfolios offering max return for a given risk level.
+                                </p>
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 bg-gray-50 p-4 rounded border border-gray-200">
+                                    <div>
+                                        <strong class="block mb-2 text-xs text-black">Portfolio Risk (Variance)</strong>
+                                        <p class="text-xs">$$ \sigma_p^2 = \sum w_i^2\sigma_i^2 + \sum_{i \neq j} w_i w_j \sigma_i \sigma_j \rho_{ij} $$</p>
+                                    </div>
+                                    <div>
+                                        <strong class="block mb-2 text-xs text-black">CAPM Formula</strong>
+                                        <p class="text-xs">$$ E(R_i) = R_f + \beta_i(E(R_m) - R_f) $$</p>
+                                        <p class="text-[10px] text-gray-500 mt-1">Beta (&beta;) measures systematic market risk.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mb-8 border-b border-gray-100 pb-8">
+                                <h5 class="font-bold text-black mb-4 uppercase text-xs tracking-widest">II. Arbitrage Pricing & Factor Models</h5>
+                                <p class="mb-4 text-xs">
+                                    Moving beyond the single-factor market model to multi-factor explanations (Fama-French).
+                                </p>
+                                <div class="bg-gray-50 p-4 rounded border border-gray-200 text-xs">
+                                    <strong>Fama-French 3-Factor Model:</strong>
+                                    <p class="mt-2">$$ E(R_i) - R_f = \alpha + \beta_m(R_m - R_f) + \beta_s SMB + \beta_v HML $$</p>
+                                    <ul class="list-disc list-inside mt-2 text-gray-500">
+                                        <li><strong>SMB:</strong> Small Minus Big (Size factor)</li>
+                                        <li><strong>HML:</strong> High Minus Low (Value factor)</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div>
+                                <h5 class="font-bold text-black mb-4 uppercase text-xs tracking-widest">III. Continuous-Time Finance (Black-Scholes)</h5>
+                                <p class="mb-4 text-xs">
+                                    Using stochastic calculus (Ito's Lemma, Brownian Motion) to price derivatives.
+                                </p>
+                                <div class="bg-gray-100 p-4 rounded border border-gray-200 text-xs">
+                                    <strong class="block mb-2 text-black">Black-Scholes PDE</strong>
+                                    <p class="mb-4">$$ \frac{\partial V}{\partial t} + rS\frac{\partial V}{\partial S} + \frac{1}{2}\sigma^2 S^2 \frac{\partial^2 V}{\partial S^2} - rV = 0 $$</p>
+                                    
+                                    <strong class="block mb-2 text-black">Call Option Solution</strong>
+                                    <p>$$ C(S,t) = S_t N(d_1) - K e^{-r(T-t)} N(d_2) $$</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </details>
+                </div>
+
+                <div class="bg-white border border-gray-200 shadow-sm overflow-hidden rounded-sm">
+                    <details class="group">
+                        <summary class="flex justify-between items-center cursor-pointer p-8 hover:bg-gray-50 transition-colors">
+                            <div>
+                                <span class="text-xs font-mono text-text-muted mb-2 block">Investment Thesis</span>
+                                <h4 class="font-serif text-xl md:text-2xl mb-2 leading-snug">
+                                    Equity Research: Niche Moats
+                                </h4>
+                                <p class="text-text-muted text-sm italic">
+                                    Analysis of 5 under-the-radar companies with quasi-monopolistic advantages.
+                                </p>
+                            </div>
+                            <span class="transform group-open:rotate-180 transition-transform duration-300 text-gray-400">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                            </span>
+                        </summary>
+                        
+                        <div class="px-8 pb-12 pt-4 text-sm text-gray-700 leading-relaxed">
+                            
+                            <div class="mb-8 p-4 bg-gray-50 border-l-4 border-accent text-xs">
+                                <strong>Strategy:</strong> Identifying U.S. small/mid-cap stocks ($500M - $10B) with dominant niche positions, strong financials, and reasonable valuations that have been overlooked by hype cycles.
+                            </div>
+
+                            <div class="grid grid-cols-1 gap-8">
+                                
+                                <div class="border border-gray-200 p-6 rounded-sm hover:shadow-md transition-shadow">
+                                    <div class="flex justify-between items-baseline mb-4">
+                                        <h5 class="font-bold text-lg text-black">Miller Industries (MLR)</h5>
+                                        <span class="text-xs font-mono bg-gray-100 px-2 py-1 rounded">Machinery | Cap: ~$460M</span>
+                                    </div>
+                                    <p class="text-xs font-bold text-accent uppercase tracking-widest mb-2">The Moat: Tow Truck Titan</p>
+                                    <p class="mb-4 text-sm">
+                                        Undisputed leader in tow/recovery vehicles (Century, Vulcan brands). High switching costs due to extensive dealer network and brand loyalty.
+                                    </p>
+                                    <div class="text-xs text-text-muted bg-gray-50 p-3 rounded">
+                                        <strong>Thesis:</strong> Stock down ~34% LTM despite dominant market share. Conservative balance sheet (D/E 0.13) and normalized demand creates a deep value opportunity (EV/Sales < 0.5).
+                                    </div>
+                                </div>
+
+                                <div class="border border-gray-200 p-6 rounded-sm hover:shadow-md transition-shadow">
+                                    <div class="flex justify-between items-baseline mb-4">
+                                        <h5 class="font-bold text-lg text-black">Verra Mobility (VRRM)</h5>
+                                        <span class="text-xs font-mono bg-gray-100 px-2 py-1 rounded">Smart Mobility | Cap: ~$3.9B</span>
+                                    </div>
+                                    <p class="text-xs font-bold text-accent uppercase tracking-widest mb-2">The Moat: Infrastructure Lock-in</p>
+                                    <p class="mb-4 text-sm">
+                                        Operates toll/speed camera systems for governments. Long-term contracts and integration into city infrastructure create high barriers to entry.
+                                    </p>
+                                    <div class="text-xs text-text-muted bg-gray-50 p-3 rounded">
+                                        <strong>Thesis:</strong> High recurring revenue and EBITDA margins (~45%). Market underestimates cash generation capacity to deleverage.
+                                    </div>
+                                </div>
+
+                                <div class="border border-gray-200 p-6 rounded-sm hover:shadow-md transition-shadow">
+                                    <div class="flex justify-between items-baseline mb-4">
+                                        <h5 class="font-bold text-lg text-black">Addus HomeCare (ADUS)</h5>
+                                        <span class="text-xs font-mono bg-gray-100 px-2 py-1 rounded">Healthcare | Cap: ~$2.1B</span>
+                                    </div>
+                                    <p class="text-xs font-bold text-accent uppercase tracking-widest mb-2">The Moat: Local Density</p>
+                                    <p class="mb-4 text-sm">
+                                        Dominant provider of home-based personal care (Medicaid). Deep local ties and regulatory expertise create a "local monopoly" effect.
+                                    </p>
+                                    <div class="text-xs text-text-muted bg-gray-50 p-3 rounded">
+                                        <strong>Thesis:</strong> Stable double-digit growth with defensive characteristics. Positive reimbursement trends (IL/TX) ignored by market.
+                                    </div>
+                                </div>
+
+                                <div class="border border-gray-200 p-6 rounded-sm hover:shadow-md transition-shadow">
+                                    <div class="flex justify-between items-baseline mb-4">
+                                        <h5 class="font-bold text-lg text-black">RCI Hospitality (RICK)</h5>
+                                        <span class="text-xs font-mono bg-gray-100 px-2 py-1 rounded">Hospitality | Cap: ~$267M</span>
+                                    </div>
+                                    <p class="text-xs font-bold text-accent uppercase tracking-widest mb-2">The Moat: Regulatory Protection</p>
+                                    <p class="mb-4 text-sm">
+                                        Owns adult venues (Rick's Cabaret). Zoning laws prevent new competitors, granting existing licenses a legal monopoly.
+                                    </p>
+                                    <div class="text-xs text-text-muted bg-gray-50 p-3 rounded">
+                                        <strong>Thesis:</strong> Trading at fire-sale valuations (~5x EBITDA) due to temporary legal news. High cash flow + active buybacks + real estate backing provide margin of safety.
+                                    </div>
+                                </div>
+
+                                <div class="border border-gray-200 p-6 rounded-sm hover:shadow-md transition-shadow">
+                                    <div class="flex justify-between items-baseline mb-4">
+                                        <h5 class="font-bold text-lg text-black">Acushnet (GOLF)</h5>
+                                        <span class="text-xs font-mono bg-gray-100 px-2 py-1 rounded">Consumer | Cap: ~$4.5B</span>
+                                    </div>
+                                    <p class="text-xs font-bold text-accent uppercase tracking-widest mb-2">The Moat: Brand Loyalty</p>
+                                    <p class="mb-4 text-sm">
+                                        Parent of Titleist/FootJoy. #1 ball in golf creates recurring revenue stream similar to razor/blade model.
+                                    </p>
+                                    <div class="text-xs text-text-muted bg-gray-50 p-3 rounded">
+                                        <strong>Thesis:</strong> Steady compounder (ROIC > WACC) trading at reasonable ~15x earnings. Low volatility "quasi-monopoly" in sports.
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </details>
+                </div>
             </div>
         </section>
 
