@@ -177,42 +177,394 @@
 
             <div class="mb-16">
                 <h3 class="text-xs font-bold text-accent uppercase tracking-widest mb-6">Engineering & Physics</h3>
-                <div class="bg-white p-8 border border-gray-200 shadow-sm">
-                    <span class="text-xs font-mono text-text-muted mb-2 block">Senior Thesis</span>
-                    <h4 class="font-serif text-xl md:text-2xl mb-4 leading-snug">
-                        Impact of applied external resistor and variance in pulse rise and fall time on polarity-induced threshold voltage shift in Te-based Ovonic Threshold Switching chalcogenides for Selector-Only Memory (SOM) applications
-                    </h4>
-                    <div class="text-sm text-text-muted border-t pt-4 mt-4 border-gray-100">
-                        <p class="mb-2"><strong>Additional Works:</strong></p>
-                        <ul class="list-disc list-inside space-y-1">
-                            <li>Kinematics of a Bus: Mathematical modeling of transport.</li>
-                            <li>Derivations in Quantum Mechanics & Linear Algebra.</li>
-                            <li>Quantum Einstein, Bohr, and the Great Debate About the Nature of Reality.</li>
-                        </ul>
+                
+                <div class="bg-white border border-gray-200 shadow-sm overflow-hidden rounded-sm">
+                    
+                    <div class="p-8 pb-8">
+                        <span class="text-xs font-mono text-text-muted mb-2 block">Senior Thesis (Yonsei University)</span>
+                        <h4 class="font-serif text-xl md:text-2xl mb-6 leading-snug">
+                            Impact of applied external resistor and pulse variance in Te-based Ovonic Threshold Switching (SOM)
+                        </h4>
+                        
+                        <div class="bg-gray-50 p-6 border-l-4 border-accent rounded-r-sm">
+                            <h5 class="font-bold text-black mb-3 text-xs uppercase tracking-wide">Simplified Explanation</h5>
+                            <p class="mb-4 font-serif text-lg text-black italic">
+                                "How does a material remember the electric pulses it has experienced before?"
+                            </p>
+                            <p class="text-sm text-gray-700 leading-relaxed mb-4">
+                                Most computers separate memory (storage) and logic (processing). My research explores <strong>Selector-Only Memory (SOM)</strong>, where a material acts like a "smart bouncer"—deciding whether to let current pass based on the history of previous electrical pulses.
+                            </p>
+                            <p class="text-sm text-gray-700 leading-relaxed">
+                                By controlling the "rhythm" of these pulses (timing) and the "pressure" (resistance), we can teach the material to remember binary states (0 or 1) without traditional transistors. In short: <strong>timing writes history.</strong>
+                            </p>
+                        </div>
                     </div>
+
+                    <details class="group border-t border-gray-200 bg-white">
+                        <summary class="flex justify-between items-center cursor-pointer px-8 py-4 hover:bg-gray-50 transition-colors">
+                            <span class="text-xs font-bold uppercase tracking-widest text-corporate-black">Read Full Technical Paper</span>
+                            <span class="transform group-open:rotate-180 transition-transform duration-300 text-gray-400">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                            </span>
+                        </summary>
+                        
+                        <div class="px-8 pb-12 pt-8 text-xs md:text-sm text-text-muted leading-relaxed font-mono bg-gray-50 border-t border-gray-100">
+                            
+                            <div class="mb-8 pb-6 border-b border-gray-200">
+                                <p class="font-bold text-black mb-1">Jongpyo Hong et al.</p>
+                                <p>Nano Science and Engineering, Integrated Science and Engineering Division</p>
+                                <p>Underwood International College, Yonsei University</p>
+                            </div>
+
+                            <div class="mb-8">
+                                <h5 class="font-bold text-black mb-2 text-sm uppercase">Abstract</h5>
+                                <p>
+                                    The integration of phase change memory (PCM) with ovonic threshold switching (OTS) selectors in a 3D crosspoint array  has gained attention for its potential and its promising developments in memory technology. Stability and scalability of the integration of PCM with OTS remain a challenge, particularly due to the instability in the threshold voltage of OTS devices from the application of pulses.
+                                </p>
+                                <p class="mt-4">
+                                    This research capitalizes on the instability of the threshold voltage and investigates the impact of pulse rise and fall time and external resistor on threshold voltage shift in a Te-based OTS device to enhance the read window margin (RWM). By varying pulse durations, this research demonstrates that shorter pulses show greater shifts in threshold voltage. This research also demonstrates that addition of higher resistance with external resistors increases the magnitude of both positive and negative threshold voltage shifts.
+                                </p>
+                            </div>
+
+                            <div class="mb-8">
+                                <h5 class="font-bold text-black mb-2 text-sm uppercase">1. Introduction</h5>
+                                <p>
+                                    The physical segregation of processor and memory units in the traditional von Neumann architecture heavily restricts the amount of data that can be transferred, a phenomenon known as the von Neumann bottleneck. The highly dense 3D crossbar architecture comes at a cost, however. Half-selected cells form sneak currents that could entail system failure.
+                                </p>
+                                <p class="mt-2">
+                                    Enter the ovonic threshold switching (OTS) selectors. The shift in the threshold voltage induced by the polarity of the applied pulse, initially considered an undesirable instability, can be capitalized upon to simplify the PCM-OTS stack by using only the OTS device as a memory device without the PCM, creating a selector-only memory (SOM) device.
+                                </p>
+                            </div>
+
+                            <div class="mb-8">
+                                <h5 class="font-bold text-black mb-2 text-sm uppercase">2. Methods</h5>
+                                <p>
+                                    This research selected Te as a substitute for Se because of its expected similar properties for they belong to the same group. After cleaning the prepared SiO2 wafer with acetone, IPA, and DI water, a bottom electrode of Tungsten is deposited via PVD. The OTS material is deposited onto the topmost layer via RF sputter .
+                                </p>
+                                <p class="mt-2">
+                                    This paper focuses on NSiTe device. Using this device, the pulse rise and fall times were initially varied, and the effect on the magnitude of threshold voltage shift was measured. Next, the external resistor applied to the system was varied.
+                                </p>
+                            </div>
+
+                            <div class="mb-8">
+                                <h5 class="font-bold text-black mb-2 text-sm uppercase">3. Results and Discussion</h5>
+                                
+                                <p class="mb-4"><strong>3.1 Polarity Effect:</strong> NSiTe analyzed in this research exhibited an increase in the threshold voltage for the same subsequent polarity pulses and a decrease in the threshold voltage for the opposite subsequent polarity pulses.</p>
+
+                                <p class="mb-4"><strong>3.2 Pulse Rise/Fall Time:</strong> With the external resistor fixed at 330 ohms, the rise and fall time was varied (1, 2, 4, 8 μs). In both the positive and negative branch, the magnitude of the threshold voltage shift decreases as pulse rise and fall time increases. Therefore, to increase the RWM, shorter pulse rise and fall time should be chosen.</p>
+                                
+                                <p class="mb-4"><strong>3.3 External Resistor:</strong> Various resistors ranging from 110 ohms to 680 ohms were applied. The magnitude of threshold voltage shift increases as the resistance of the applied external resistor increases. This disparity may be explained by the Joule heating effect. An increase in resistance leads to a decrease in Joule heating (145K → 53K), decreasing heat-assisted ion migration.</p>
+                            </div>
+
+                            <div class="mb-8">
+                                <h5 class="font-bold text-black mb-2 text-sm uppercase">4. Conclusion</h5>
+                                <p>
+                                    The experimental results present a clear trend: decreasing pulse time leads to a greater threshold voltage shift, and increasing resistance of the external resistor leads to a more pronounced shift. The findings highlight the crucial role of pulse time and external resistors in increasing RWM to improve the distinction between binary states and reducing error rates in memory operations.
+                                </p>
+                            </div>
+                            
+                            <div class="mb-8 border-t border-gray-200 pt-4">
+                                <h5 class="font-bold text-black mb-2 text-sm uppercase">5. Selected References</h5>
+                                <ul class="list-decimal list-inside space-y-1 text-xs">
+                                    <li>Zhu, Min & Ren, Kun & Song, Zhitang. (2019). Ovonic threshold switching selectors...</li>
+                                    <li>Wang, Zhongrui et al. (2020). Resistive switching materials for information processing...</li>
+                                    <li>Lai, S. (2009). Non-Volatile memory technologies...</li>
+                                    <li>Ravsher, Taras et al. (2023). Polarity-Induced Threshold Voltage Shift...</li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </details>
                 </div>
+
+<div class="bg-white border border-gray-200 shadow-sm overflow-hidden rounded-sm mt-8">
+                <details class="group">
+                    <summary class="flex justify-between items-center cursor-pointer p-8 hover:bg-gray-50 transition-colors">
+                        <div>
+                            <span class="text-xs font-mono text-text-muted mb-2 block">Mathematical Modeling</span>
+                            <h4 class="font-serif text-xl md:text-2xl mb-2 leading-snug">
+                                Kinematics of a Bus: Deriving Safety Margins
+                            </h4>
+                            <p class="text-text-muted text-sm italic">
+                                Deriving the underlying geometry of a 12m bus lane change.
+                            </p>
+                        </div>
+                        <span class="transform group-open:rotate-180 transition-transform duration-300 text-gray-400">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </span>
+                    </summary>
+                    
+                    <div class="px-8 pb-12 pt-4 text-sm text-gray-700 leading-relaxed font-mono">
+                        
+                        <div class="mb-8 bg-gray-50 p-4 border-l-4 border-black">
+                            <strong>Context:</strong> While serving as a heavy-vehicle operator, I realized standard safety manuals provided rules but not reasons. I used downtime to derive the geometry of a 12-meter bus lane change to mathematically verify safety margins.
+                        </div>
+
+                        <h5 class="font-bold text-black mb-4 uppercase text-xs tracking-widest border-b border-gray-200 pb-2">I. Minimum Clearance for Lane Change</h5>
+                        <p class="mb-4"><strong>Q:</strong> What is the minimum distance to the vehicle in front to avoid scraping during a full-lock lane change?</p>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-6">
+                            <div>
+                                <strong class="block mb-2 text-xs uppercase text-text-muted">Parameters</strong>
+                                <ul class="list-disc list-inside space-y-1 text-xs">
+                                    <li>Rigid 12m city bus (Single-lane lateral shift)</li>
+                                    <li>Wheelbase (L) = 6.0 m</li>
+                                    <li>Max steering angle (&theta;) = 40&deg;</li>
+                                    <li>Lane width (w) = 3.50 m</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <strong class="block mb-2 text-xs uppercase text-text-muted">Calculations</strong>
+                                <p class="mb-1">Turning Radius (R):</p>
+                                <p class="mb-2 bg-gray-100 p-2 rounded">R = L / tan(&theta;) = 7.15 m</p>
+                                <p class="mb-1">Forward Advance (x):</p>
+                                <p class="mb-2 bg-gray-100 p-2 rounded">
+                                    &phi; = arccos(1 - w/R) &approx; 59.3&deg;<br>
+                                    x = R sin(&phi;) &approx; 6.15 m
+                                </p>
+                            </div>
+                        </div>
+
+                        <p class="mb-4">
+                            <strong>Result:</strong> Adding a 0.5m safety pad, the minimum gap is <strong>6.5 - 7.0 meters</strong>. If the driver waits until the rear bumper of the car ahead is 7m clear, the nose will not overlap.
+                        </p>
+
+                        <div class="my-8">
+    <img src="img1.jpg" alt="Bus Clearance Diagram" class="w-full h-auto rounded shadow-sm border border-gray-200">
+    <p class="text-xs text-center text-text-muted mt-2 italic">Figure 1: Clearance geometry analysis.</p>
+</div>
+
+                        <h5 class="font-bold text-black mb-4 uppercase text-xs tracking-widest border-b border-gray-200 pb-2 mt-12">II. The S-Curve Maneuver</h5>
+                        <p class="mb-4"><strong>Q:</strong> How far must the bus run straight before counter-steering to center in Lane 2?</p>
+
+                        <div class="mb-6">
+                            <strong class="block mb-2 text-xs uppercase text-text-muted">Three-Phase Logic</strong>
+                            <ol class="list-decimal list-inside text-xs space-y-1">
+                                <li><strong>Full-Left Lock:</strong> Enter Lane 2.</li>
+                                <li><strong>Straight Segment (S):</strong> Slide diagonally holding heading +&phi;.</li>
+                                <li><strong>Full-Right Lock:</strong> Cancel heading to finish centered.</li>
+                            </ol>
+                        </div>
+
+                        <div class="bg-gray-100 p-4 rounded mb-6 text-xs overflow-x-auto">
+                            <p class="mb-2 font-bold text-text-muted">Total Lateral Shift Equation:</p>
+                            <p class="mb-4">y<sub>final</sub> = R(1 - cos&phi;) + S sin&phi; + R sin&sup2;&phi; - R(1 - cos&phi;)cos&phi; = w<sub>lane</sub></p>
+                            
+                            <p class="mb-2 font-bold text-text-muted">Solving for Straight Segment (S):</p>
+                            <p>S = (w<sub>lane</sub> - R(1 - cos&phi;)&sup2; - R sin&sup2;&phi;) / sin&phi;</p>
+                        </div>
+
+                        <p class="mb-4">
+                            <strong>Result:</strong> For a half-width shift (1.25m), the bus must roll straight (yawed 34&deg;) for approximately <strong>1.8 meters</strong> before counter-steering.
+                        </p>
+
+                        <div class="my-8">
+    <img src="img2.jpg" alt="Bus Clearance Diagram" class="w-full h-auto rounded shadow-sm border border-gray-200">
+    <p class="text-xs text-center text-text-muted mt-2 italic">Figure 1: Clearance geometry analysis.</p>
+</div>
+                        
+                    </div>
+                </details>
+            </div>
+                
+                <div class="mt-4 text-xs text-text-muted pl-1">
+                    <p class="mb-1 font-semibold text-black">Additional Works:</p>
+                    <ul class="list-disc list-inside space-y-1">
+                    
+                        <li>Derivations in Quantum Mechanics & Linear Algebra.</li>
+                        <li>Quantum Einstein, Bohr, and the Great Debate About the Nature of Reality.</li>
+                    </ul>
+                </div>
+            </div>
+            </div>
             </div>
 
             <div class="mb-16">
                 <h3 class="text-xs font-bold text-accent uppercase tracking-widest mb-6">Law & Policy</h3>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <div>
-                        <h4 class="font-semibold text-lg mb-2">Constitutional Logic</h4>
-                        <p class="text-text-muted text-sm leading-relaxed">
-                            "Resolving Gödel’s Constitutional Loophole: A Proposal to Safeguard the Amendment Process."
-                        </p>
+                    <div class="col-span-1 md:col-span-2 bg-white border border-gray-200 p-6 shadow-sm hover:shadow-md transition-shadow">
+                        <details class="group">
+                            <summary class="cursor-pointer list-none">
+                                <div class="flex justify-between items-start">
+                                    <div>
+                                        <h4 class="font-serif text-xl mb-2 font-bold text-black">Resolving Gödel’s Constitutional Loophole</h4>
+                                        <p class="text-text-muted text-sm leading-relaxed mb-2">
+                                            A proposal to safeguard the Amendment Process against self-destruction.
+                                        </p>
+                                        <span class="text-xs font-mono text-accent uppercase tracking-wider">Read Full Essay +</span>
+                                    </div>
+                                </div>
+                            </summary>
+                            
+                            <div class="mt-8 pt-8 border-t border-gray-100 text-gray-700 leading-relaxed text-sm md:text-base">
+                                
+                                <h5 class="font-bold text-black mb-4 uppercase text-xs tracking-widest">Introduction</h5>
+                                <p class="mb-6">
+                                    In 1947, the logician Kurt Gödel famously claimed to have found a loophole in the United States Constitution that could allow the nation to legally transform into a dictatorship. During his U.S. citizenship exam, Gödel told a judge that “this [dictatorship] could not happen in the U.S.” under the Constitution—and then insisted, “Oh, yes, I can prove it,” before being hastily cut off. This mysterious “Gödel’s Loophole” has since been called “one of the great unsolved problems of constitutional law.”
+                                </p>
+                                <p class="mb-6">
+                                    In essence, Gödel had identified a self-referential flaw: an “inner contradiction” in the Constitution’s own amendment rules. The Constitution’s Article V prescribes how it can be amended, but—as Gödel noted—those rules can be used on themselves, potentially undermining any limits to change. This paper examines the nature of Gödel’s loophole and proposes a resolution to safeguard the Constitution’s core principles from self-destructive amendments.
+                                </p>
+
+                                <h5 class="font-bold text-black mb-4 uppercase text-xs tracking-widest">The Self-Amendment Paradox</h5>
+                                <p class="mb-6">
+                                    Article V of the U.S. Constitution outlines a strict process for amendments (requiring supermajority approval by Congress and the states). Gödel’s insight was that Article V can be amended by its own procedure, allowing a downward spiral of ever-easier changes. In other words, one could legally amend Article V to loosen the requirements for future amendments, then amend it again even more easily, and so on. Ultimately, nothing in the text would stop a sufficiently determined majority from amending away core democratic safeguards—for example, granting all power to a dictator—entirely through legal means.
+                                </p>
+                                <p class="mb-6">
+                                    This is the crux of Gödel’s loophole: the Constitution permits amendments, and thus (absent further restriction) even permits amending the amendment process itself in a way that could negate the Constitution’s fundamental character.
+                                </p>
+                                <blockquote class="prose-quote">
+                                    “If legal rules that authorize change can be used to change themselves, then we have paradox and contradiction; but if they cannot be used to change themselves… then we have immutable rules.” — Peter Suber
+                                </blockquote>
+                                <p class="mb-6">
+                                    In other words, either the amendment power is absolute—in which case a constitution can legally destroy its own foundations—or there are untouchable rules—which would contradict the ideal of complete popular sovereignty. This dilemma forces us to “give up either a central element of legal rationality or a central element of democratic theory.”
+                                </p>
+
+                                <h5 class="font-bold text-black mb-4 uppercase text-xs tracking-widest">Proposed Resolution: Entrenching a Constitutional Core</h5>
+                                <p class="mb-6">
+                                    To resolve Gödel’s loophole, we propose embracing one horn of the self-amendment dilemma: accept that some constitutional principles must be beyond the reach of Article V. In practice, this means identifying and entrenching a fundamental core of the Constitution that cannot be amended through the normal process—for example, the republican form of government, basic separation of powers, or guaranteed individual rights.
+                                </p>
+                                <p class="mb-6">
+                                    By placing certain foundational elements off-limits to amendment, we impose a logical limitation that blocks the worst-case self-destruction scenario. This approach sacrifices a bit of theoretical “omnipotence” of amendment power in favor of preserving the Constitution’s identity. Rather than viewing the amendment process as an all-powerful tool that can even abolish the system itself, it becomes a delegated power bound by a higher trust.
+                                </p>
+                                <p class="mb-6">
+                                    Notably, many modern constitutional democracies already employ this strategy. Some constitutions explicitly contain unamendable clauses (often called “eternity clauses”) that forbid certain changes. Even where such clauses are absent, courts in various countries have developed a “basic structure doctrine,” holding that there are implicit limits to amendment.
+                                </p>
+
+                                <h5 class="font-bold text-black mb-4 uppercase text-xs tracking-widest">Discussion</h5>
+                                <p class="mb-6">
+                                    Implementing an inviolable constitutional core in the U.S. would mark a significant shift, raising questions about enforcement and definition. Who decides what principles are unamendable? The most likely answer is the judiciary. Just as courts elsewhere have stepped in to void “unconstitutional constitutional amendments,” the U.S. Supreme Court could conceivably do the same if faced with, say, an amendment abolishing elections or the Congress.
+                                </p>
+                                <p class="mb-6">
+                                    Critics might object that this solution undermines pure popular sovereignty. However, the practical necessity of constitutional endurance justifies some constraints. Even the founders built in partial super-majority entrenchment. Thus, the Constitution already favors stability over facile change in crucial areas.
+                                </p>
+
+                                <h5 class="font-bold text-black mb-4 uppercase text-xs tracking-widest">Conclusion</h5>
+                                <p class="mb-6">
+                                    Gödel’s loophole highlights a profound theoretical tension at the heart of constitutional law—a tension between limitless adaptability and the preservation of core values. The resolution proposed here is to resolve that tension by formalizing limits on the amendment power. By entrenching the Constitution’s basic democratic structure against amendment, we choose the side of constitutional continuity over theoretical omnipotence.
+                                </p>
+                                <p class="mb-6">
+                                    By adopting a principle of constrained amendment, America can elegantly answer Gödel’s paradox—preserving both legal rationality and democratic integrity—and ensure that the only way to end the Constitution’s reign is by forsaking the rule of law entirely.
+                                </p>
+                                <p class="text-xs text-text-muted mt-8 border-t border-gray-200 pt-4">© Jongpyo Hong</p>
+                            </div>
+                        </details>
                     </div>
-                    <div>
-                        <h4 class="font-semibold text-lg mb-2">Medical Law</h4>
-                        <p class="text-text-muted text-sm leading-relaxed">
-                            "Putative Causal Link Between Tylenol Use in Pregnancy and Autism."
-                        </p>
+                    <div class="col-span-1 md:col-span-2 bg-white border border-gray-200 p-6 shadow-sm hover:shadow-md transition-shadow">
+                        <details class="group">
+                            <summary class="cursor-pointer list-none">
+                                <div class="flex justify-between items-start">
+                                    <div>
+                                        <h4 class="font-serif text-xl mb-2 font-bold text-black">Putative Causal Link Between Tylenol and Autism</h4>
+                                        <p class="text-text-muted text-sm leading-relaxed mb-2">
+                                            A review of scientific evidence, regulatory frameworks, and Kenvue’s future liability.
+                                        </p>
+                                        <span class="text-xs font-mono text-accent uppercase tracking-wider">Read Full Report +</span>
+                                    </div>
+                                </div>
+                            </summary>
+                            
+                            <div class="mt-8 pt-8 border-t border-gray-100 text-gray-700 leading-relaxed text-sm md:text-base">
+                                
+                                <h5 class="font-bold text-black mb-4 uppercase text-xs tracking-widest">Background</h5>
+                                <p class="mb-6">
+                                    Tylenol (acetaminophen) is used by more than half of pregnant women worldwide. Recent claims linking acetaminophen use in pregnancy to autism have prompted international debate and new lawsuits. This report reviews the scientific evidence and examines statutory and case-law frameworks relevant to future lawsuits against Kenvue.
+                                </p>
+
+                                <h5 class="font-bold text-black mb-4 uppercase text-xs tracking-widest">Scientific Evidence</h5>
+                                <p class="mb-4">
+                                    <strong>Observational Associations:</strong> Numerous cohort studies (e.g., Boston Birth Cohort) report associations between prolonged use and ASD/ADHD. However, these rely on self-reporting and struggle to control for confounders like maternal fever.
+                                </p>
+                                <p class="mb-4">
+                                    <strong>High-Quality Cohort Studies:</strong> Large population-based studies using sibling comparisons refute a causal link:
+                                </p>
+                                <ul class="list-disc list-inside mb-6 pl-4 text-sm bg-gray-50 p-4 border border-gray-200 rounded">
+                                    <li class="mb-2"><strong>Swedish National Cohort (2024):</strong> 2.48 million children. After controlling for genetics/environment via sibling comparison, the hazard ratio for autism was 0.98 (no increased risk).</li>
+                                    <li><strong>Norwegian & Japanese Cohorts:</strong> Similarly found no association after controlling for familial confounders.</li>
+                                </ul>
+                                <p class="mb-6">
+                                    <strong>Consensus:</strong> ACOG, WHO, and the FDA acknowledge associations in some data but state that causation is unproven. They continue to recommend acetaminophen as the safest option for pain/fever in pregnancy, noting that untreated fever poses greater risks to the fetus.
+                                </p>
+
+                                <h5 class="font-bold text-black mb-4 uppercase text-xs tracking-widest">Regulatory Framework</h5>
+                                <p class="mb-6">
+                                    <strong>FDA Position:</strong> OTC drugs like Tylenol are governed by the Monograph System. While the FDA has initiated a process to add a cautionary label regarding "possible association," they explicitly state that a causal relationship has not been established.
+                                </p>
+                                <p class="mb-6">
+                                    <strong>Preemption (Merck v. Albrecht):</strong> State failure-to-warn claims are preempted only if there is "clear evidence" the FDA would have rejected the proposed warning. Kenvue can argue that a warning asserting causation would be rejected by the FDA as false/misleading given the current scientific consensus.
+                                </p>
+
+                                <h5 class="font-bold text-black mb-4 uppercase text-xs tracking-widest">Analysis of Liability</h5>
+                                <p class="mb-6">
+                                    <strong>Causation Challenges:</strong> Plaintiffs face a steep uphill battle. Without reliable scientific evidence establishing causation (general causation), expert testimony is unlikely to survive <em>Daubert</em> scrutiny, as seen in the 2024 dismissal of 500+ cases in MDL 3043.
+                                </p>
+                                <p class="mb-6">
+                                    <strong>Strategic Defenses:</strong> Kenvue will likely leverage the FDA’s recent statements to bolster preemption arguments. While new "cautionary" labeling might be mandated, liability for past "failure to warn" is mitigated by the lack of scientific consensus during the relevant periods.
+                                </p>
+
+                                <h5 class="font-bold text-black mb-4 uppercase text-xs tracking-widest">Conclusion</h5>
+                                <p class="mb-6">
+                                    Current scientific evidence does not support a causal link. While the legal landscape is shifting with new FDA labeling processes, the high bar for scientific causation in court protects manufacturers against claims based on correlation alone.
+                                </p>
+                                <p class="text-xs text-text-muted mt-8 border-t border-gray-200 pt-4">© Jongpyo Hong</p>
+                            </div>
+                        </details>
                     </div>
-                    <div>
-                        <h4 class="font-semibold text-lg mb-2">Privacy & Security</h4>
-                        <p class="text-text-muted text-sm leading-relaxed">
-                            "Session: A Privacy and Security Haven."
-                        </p>
+                    <div class="col-span-1 md:col-span-2 bg-white border border-gray-200 p-6 shadow-sm hover:shadow-md transition-shadow">
+                        <details class="group">
+                            <summary class="cursor-pointer list-none">
+                                <div class="flex justify-between items-start">
+                                    <div>
+                                        <h4 class="font-serif text-xl mb-2 font-bold text-black">Session: A Privacy and Security Haven</h4>
+                                        <p class="text-text-muted text-sm leading-relaxed mb-2">
+                                            A comparative analysis of decentralized encryption vs. centralized vulnerability (Session vs. KakaoTalk).
+                                        </p>
+                                        <span class="text-xs font-mono text-accent uppercase tracking-wider">Read Full Analysis +</span>
+                                    </div>
+                                </div>
+                            </summary>
+                            
+                            <div class="mt-8 pt-8 border-t border-gray-100 text-gray-700 leading-relaxed text-sm md:text-base">
+                                
+                                <h5 class="font-bold text-black mb-4 uppercase text-xs tracking-widest">End-to-End Encryption</h5>
+                                <p class="mb-6">
+                                    <strong>Session:</strong> Uses end-to-end encryption (E2EE) by default. Built on the Signal protocol (Double Ratchet), messages are encrypted on the device. Only the recipient can decrypt them.
+                                </p>
+                                <p class="mb-6">
+                                    <strong>KakaoTalk:</strong> Default chats are not E2EE; the server holds the keys (LOCO protocol). "Secret Chat" is optional and clumsy. Security researchers have found Kakao’s key exchange lacks robust authentication, leaving it vulnerable to Man-in-the-Middle (MITM) attacks if the server is compromised.
+                                </p>
+
+                                <h5 class="font-bold text-black mb-4 uppercase text-xs tracking-widest">Metadata Protection</h5>
+                                <p class="mb-6">
+                                    <strong>Session (Send messages, not metadata):</strong> Requires no phone number or email. Identity is a random 66-character public key. It uses onion-routing (3 hops) so no single node knows both your IP and your recipient.
+                                </p>
+                                <p class="mb-6">
+                                    <strong>KakaoTalk:</strong> Requires a valid phone number (linked to real ID in Korea). Servers log metadata: who talked to whom, when, and from which IP. This "social graph" is stored centrally.
+                                </p>
+
+                                <h5 class="font-bold text-black mb-4 uppercase text-xs tracking-widest">Centralized vs. Decentralized</h5>
+                                <p class="mb-6">
+                                    <strong>Session:</strong> Runs on the Oxen Service Node network—a decentralized layer of incentivized nodes. There is no central server to hack or shut down.
+                                </p>
+                                <p class="mb-6">
+                                    <strong>KakaoTalk:</strong> Centralized client/server model. All data flows through Kakao Corp’s data centers. A single point of failure (e.g., the 2022 fire) cripples the service, and a single warrant can expose user data.
+                                </p>
+
+                                <h5 class="font-bold text-black mb-4 uppercase text-xs tracking-widest">Surveillance Resistance</h5>
+                                <p class="mb-6">
+                                    Session’s design makes it resistant to government subpoenas because the developers literally do not have the data. Message content is not stored centrally, and metadata is obfuscated.
+                                </p>
+                                <p class="mb-6">
+                                    KakaoTalk, as a Korea-based centralized service, is legally obligated to comply with warrants. History has shown (e.g., 2014 surveillance scandal) that private chat records can and will be handed over.
+                                </p>
+
+                                <h5 class="font-bold text-black mb-4 uppercase text-xs tracking-widest">Conclusion</h5>
+                                <p class="mb-6">
+                                    Session prioritizes privacy through architecture: no central server, default E2EE, and onion routing. KakaoTalk prioritizes convenience but leaves users exposed to server-side breaches and state surveillance. For high-risk environments, Session is the only secure choice.
+                                </p>
+                                <p class="text-xs text-text-muted mt-8 border-t border-gray-200 pt-4">© Jongpyo Hong</p>
+                            </div>
+                        </details>
                     </div>
                     <div>
                         <h4 class="font-semibold text-lg mb-2">Urban Policy</h4>
