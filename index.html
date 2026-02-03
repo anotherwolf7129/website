@@ -688,7 +688,62 @@
                             </span>
                         </summary>
 
-                        <div class="bg-white border border-gray-200 shadow-sm overflow-hidden rounded-sm mb-6">
+                        
+                        
+                        <div class="px-8 pb-12 pt-4 text-sm text-gray-700 leading-relaxed font-mono">
+                            
+                            <div class="mb-8 border-b border-gray-100 pb-8">
+                                <h5 class="font-bold text-black mb-4 uppercase text-xs tracking-widest">I. Modern Portfolio Theory & CAPM</h5>
+                                <p class="mb-4 text-xs text-text-muted">
+                                    <strong>Core Concept:</strong> Diversification reduces unsystematic risk. The Efficient Frontier represents portfolios offering max return for a given risk level.
+                                </p>
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 bg-gray-50 p-4 rounded border border-gray-200">
+                                    <div>
+                                        <strong class="block mb-2 text-xs text-black">Portfolio Risk (Variance)</strong>
+                                        <p class="text-xs">$$ \sigma_p^2 = \sum w_i^2\sigma_i^2 + \sum_{i \neq j} w_i w_j \sigma_i \sigma_j \rho_{ij} $$</p>
+                                    </div>
+                                    <div>
+                                        <strong class="block mb-2 text-xs text-black">CAPM Formula</strong>
+                                        <p class="text-xs">$$ E(R_i) = R_f + \beta_i(E(R_m) - R_f) $$</p>
+                                        <p class="text-[10px] text-gray-500 mt-1">Beta (&beta;) measures systematic market risk.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mb-8 border-b border-gray-100 pb-8">
+                                <h5 class="font-bold text-black mb-4 uppercase text-xs tracking-widest">II. Arbitrage Pricing & Factor Models</h5>
+                                <p class="mb-4 text-xs">
+                                    Moving beyond the single-factor market model to multi-factor explanations (Fama-French).
+                                </p>
+                                <div class="bg-gray-50 p-4 rounded border border-gray-200 text-xs">
+                                    <strong>Fama-French 3-Factor Model:</strong>
+                                    <p class="mt-2">$$ E(R_i) - R_f = \alpha + \beta_m(R_m - R_f) + \beta_s SMB + \beta_v HML $$</p>
+                                    <ul class="list-disc list-inside mt-2 text-gray-500">
+                                        <li><strong>SMB:</strong> Small Minus Big (Size factor)</li>
+                                        <li><strong>HML:</strong> High Minus Low (Value factor)</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div>
+                                <h5 class="font-bold text-black mb-4 uppercase text-xs tracking-widest">III. Continuous-Time Finance (Black-Scholes)</h5>
+                                <p class="mb-4 text-xs">
+                                    Using stochastic calculus (Ito's Lemma, Brownian Motion) to price derivatives.
+                                </p>
+                                <div class="bg-gray-100 p-4 rounded border border-gray-200 text-xs">
+                                    <strong class="block mb-2 text-black">Black-Scholes PDE</strong>
+                                    <p class="mb-4">$$ \frac{\partial V}{\partial t} + rS\frac{\partial V}{\partial S} + \frac{1}{2}\sigma^2 S^2 \frac{\partial^2 V}{\partial S^2} - rV = 0 $$</p>
+                                    
+                                    <strong class="block mb-2 text-black">Call Option Solution</strong>
+                                    <p>$$ C(S,t) = S_t N(d_1) - K e^{-r(T-t)} N(d_2) $$</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </details>
+                </div>
+
+                <div class="bg-white border border-gray-200 shadow-sm overflow-hidden rounded-sm mb-6">
                 <details class="group">
                     <summary class="flex justify-between items-center cursor-pointer p-8 hover:bg-gray-50 transition-colors">
                         <div>
@@ -873,59 +928,6 @@
                     </div>
                 </details>
             </div>
-                        
-                        <div class="px-8 pb-12 pt-4 text-sm text-gray-700 leading-relaxed font-mono">
-                            
-                            <div class="mb-8 border-b border-gray-100 pb-8">
-                                <h5 class="font-bold text-black mb-4 uppercase text-xs tracking-widest">I. Modern Portfolio Theory & CAPM</h5>
-                                <p class="mb-4 text-xs text-text-muted">
-                                    <strong>Core Concept:</strong> Diversification reduces unsystematic risk. The Efficient Frontier represents portfolios offering max return for a given risk level.
-                                </p>
-                                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 bg-gray-50 p-4 rounded border border-gray-200">
-                                    <div>
-                                        <strong class="block mb-2 text-xs text-black">Portfolio Risk (Variance)</strong>
-                                        <p class="text-xs">$$ \sigma_p^2 = \sum w_i^2\sigma_i^2 + \sum_{i \neq j} w_i w_j \sigma_i \sigma_j \rho_{ij} $$</p>
-                                    </div>
-                                    <div>
-                                        <strong class="block mb-2 text-xs text-black">CAPM Formula</strong>
-                                        <p class="text-xs">$$ E(R_i) = R_f + \beta_i(E(R_m) - R_f) $$</p>
-                                        <p class="text-[10px] text-gray-500 mt-1">Beta (&beta;) measures systematic market risk.</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="mb-8 border-b border-gray-100 pb-8">
-                                <h5 class="font-bold text-black mb-4 uppercase text-xs tracking-widest">II. Arbitrage Pricing & Factor Models</h5>
-                                <p class="mb-4 text-xs">
-                                    Moving beyond the single-factor market model to multi-factor explanations (Fama-French).
-                                </p>
-                                <div class="bg-gray-50 p-4 rounded border border-gray-200 text-xs">
-                                    <strong>Fama-French 3-Factor Model:</strong>
-                                    <p class="mt-2">$$ E(R_i) - R_f = \alpha + \beta_m(R_m - R_f) + \beta_s SMB + \beta_v HML $$</p>
-                                    <ul class="list-disc list-inside mt-2 text-gray-500">
-                                        <li><strong>SMB:</strong> Small Minus Big (Size factor)</li>
-                                        <li><strong>HML:</strong> High Minus Low (Value factor)</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div>
-                                <h5 class="font-bold text-black mb-4 uppercase text-xs tracking-widest">III. Continuous-Time Finance (Black-Scholes)</h5>
-                                <p class="mb-4 text-xs">
-                                    Using stochastic calculus (Ito's Lemma, Brownian Motion) to price derivatives.
-                                </p>
-                                <div class="bg-gray-100 p-4 rounded border border-gray-200 text-xs">
-                                    <strong class="block mb-2 text-black">Black-Scholes PDE</strong>
-                                    <p class="mb-4">$$ \frac{\partial V}{\partial t} + rS\frac{\partial V}{\partial S} + \frac{1}{2}\sigma^2 S^2 \frac{\partial^2 V}{\partial S^2} - rV = 0 $$</p>
-                                    
-                                    <strong class="block mb-2 text-black">Call Option Solution</strong>
-                                    <p>$$ C(S,t) = S_t N(d_1) - K e^{-r(T-t)} N(d_2) $$</p>
-                                </div>
-                            </div>
-
-                        </div>
-                    </details>
-                </div>
 
                 <div class="bg-white border border-gray-200 shadow-sm overflow-hidden rounded-sm">
                     <details class="group">
